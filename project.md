@@ -32,11 +32,11 @@ Your **presentation** should cover these components with less breadth and less d
 
 You should create a GitHub repository for your project that contains the following:
 
-* Project paper: any format (PDF, Markdown, etc.)
-* Presentation slides: any format (PDF, PowerPoint, Google Slides, etc.)
-* Code: commented Python scripts, and any other code you used in the project
-* Data: data files in "raw" or "processed" format
-* Data dictionary (aka "code book"): description of each variable, including units
+* **Project paper:** any format (PDF, Markdown, etc.)
+* **Presentation slides:** any format (PDF, PowerPoint, Google Slides, etc.)
+* **Code:** commented Python scripts, and any other code you used in the project
+* **Data:** data files in "raw" or "processed" format
+* **Data dictionary (aka "code book"):** description of each variable, including units
 
 If it's not possible or practical to include your entire dataset, you should link to your data source and provide a sample of the data. (GitHub has a [size limit](https://help.github.com/articles/what-is-my-disk-quota/) of 100 MB per file and 1 GB per repository.) If your data is private, you can either include an "anonymized" version of your data or create a private GitHub repository.
 
