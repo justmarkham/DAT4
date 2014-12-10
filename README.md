@@ -14,7 +14,7 @@ Monday | Wednesday
 1/5: [Git and GitHub](#class-4-git-and-github) | 1/7: [Pandas](#class-5-pandas)<br>**Milestone:** Question and Data Set
 1/12: [Numpy, Machine Learning, KNN](#class-6-numpy-machine-learning-knn) | 1/14: [scikit-learn, Model Evaluation Procedures](#class-7-scikit-learn-model-evaluation-procedures)
 1/19: *No Class* | 1/21: [Linear Regression](#class-8-linear-regression)
-1/26: [Logistic Regression, Preview of Other Models](#class-9-logistic-regression-preview-of-other-models) | 1/28: [Model Evaluation Metrics](#class-10-model-evaluation-metrics)<br>**Milestone:** Data Exploration and Analysis Plan
+1/26: [Logistic Regression,<br>Preview of Other Models](#class-9-logistic-regression-preview-of-other-models) | 1/28: [Model Evaluation Metrics](#class-10-model-evaluation-metrics)<br>**Milestone:** Data Exploration and Analysis Plan
 2/2: [Working a Data Problem](#class-11-working-a-data-problem) | 2/4: [Clustering and Visualization](#class-12-clustering-and-visualization)<br>**Milestone:** Deadline for Topic Changes
 2/9: [Naive Bayes](#class-13-naive-bayes) | 2/11: [Natural Language Processing](#class-14-natural-language-processing)
 2/16: *No Class* | 2/18: [Decision Trees and Ensembles](#class-15-decision-trees-and-ensembles)<br>**Milestone:** First Draft
