@@ -24,16 +24,62 @@ Monday | Wednesday
 3/16: [Project Presentations](#class-22-project-presentations) |
 
 
+### Installation and Setup
+* Install the [Anaconda distribution](http://continuum.io/downloads) of Python 2.7x.
+* Install [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and create a [GitHub](https://github.com/) account.
+* Once you receive an email invitation from [Slack](https://slack.com/), join our "DAT4 team" and add your photo!
+
+
 ### Class 1: Introduction
+* Introduction to General Assembly
+* Course overview: our philosophy and expectations
+* Data science overview
+* Tools: check for proper setup of Anaconda, Git, and Slack
+
+**Homework:**
+* Resolve any installation issues before next class.
+
+**Optional:**
+* Read [Analyzing the Analyzers](http://cdn.oreillystatic.com/oreilly/radarreport/0636920029014/Analyzing_the_Analyzers.pdf) for a useful look at the different types of data scientists.
+* Subscribe to the [Data Community DC newsletter](http://www.datacommunitydc.org/thenewsletter/) or check out their [event calendar](http://www.datacommunitydc.org/calendar) to become acquainted with the local data community.
 
 
 ### Class 2: Python
+* Overview of Python environments
+* Python self-test
+* Getting data into Python from a [public data source](public_data.md)
+* Working with data in Python
+* Overview of course project
+
+**Homework:**
+* Python exercise(s)
+* Read through the [project page](project.md) in detail.
+* Review a few [projects from past Data Science courses](https://github.com/justmarkham/DAT-project-examples) to get a sense of the variety and scope of student projects.
+
+**Optional:**
+* If you need more practice with Python, review the "Python Overview" section of [A Crash Course in Python](http://nbviewer.ipython.org/gist/rpmuller/5920182), work through some of [Codecademy's Python course](http://www.codecademy.com/en/tracks/python), or work through [Google's Python Class](https://developers.google.com/edu/python/) and its exercises.
+* For more project inspiration, browse the [student projects](http://cs229.stanford.edu/projects2013.html) from Andrew Ng's [Machine Learning course](http://cs229.stanford.edu/) at Stanford.
+
+**Resources:**
+* [Online Python Tutor](http://pythontutor.com/) is useful for visualizing (and debugging) your code.
 
 
 ### Class 3: Getting Data
+* APIs
+* Web scraping
+* Regular expressions
+
+**Homework:**
+* Think about your project question, and start looking for data that will help you to answer your question.
+* To prepare for our next class on Git, you'll need to know some command line basics. Please work through GA's excellent [command line tutorial](http://generalassembly.github.io/prework/command-line/#/), and then take this brief [quiz](https://gahub.typeform.com/to/J6xirf).
+
+**Optional:**
+* If you aren't feeling comfortable with the Python we've done so far, keep practicing using the resources above!
 
 
 ### Class 4: Git and GitHub
+* Special guest: Nick DePrey presenting his class project from DAT2
+* Git and GitHub
 
 
 ### Class 5: Pandas
