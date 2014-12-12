@@ -32,7 +32,7 @@ Monday | Wednesday
 
 ### Class 1: Introduction
 * Introduction to General Assembly
-* Course overview: our philosophy and expectations
+* Course overview: our philosophy and expectations ([slides](slides/01_course_overview.pdf))
 * Data science overview
 * Tools: check for proper setup of Anaconda, Git, and Slack
 
