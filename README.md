@@ -34,7 +34,7 @@ Monday | Wednesday
 * Introduction to General Assembly
 * Course overview: our philosophy and expectations ([slides](slides/01_course_overview.pdf))
 * Data science overview
-* Tools: check for proper setup of Anaconda, Git, and Slack
+* Tools: check for proper setup of Anaconda, overview of Slack
 
 **Homework:**
 * Resolve any installation issues before next class.
@@ -50,9 +50,10 @@ Monday | Wednesday
 * Getting data into Python from a [public data source](public_data.md)
 * Working with data in Python
 * Overview of course project
+* Check for proper setup of Git by running `git clone https://github.com/justmarkham/DAT-project-examples.git`
 
 **Homework:**
-* Python exercise(s)
+* Python exercise and expected results
 * Read through the [project page](project.md) in detail.
 * Review a few [projects from past Data Science courses](https://github.com/justmarkham/DAT-project-examples) to get a sense of the variety and scope of student projects.
 
@@ -65,6 +66,7 @@ Monday | Wednesday
 
 
 ### Class 3: Getting Data
+* Checking your homework
 * APIs
 * Web scraping
 * Regular expressions
