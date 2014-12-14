@@ -4,7 +4,7 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 **Instructors:** Sinan Ozdemir and Kevin Markham. **Teaching Assistant:** Brandon Burroughs.
 
-**Office hours:** 1-3pm on Saturday and Sunday (Starbucks at 15th & K), 5:15-6:30pm on Monday (GA)
+**Office hours:** 1-3pm on Saturday and Sunday ([Starbucks at 15th & K](http://www.yelp.com/biz/starbucks-washington-15)), 5:15-6:30pm on Monday (GA)
 
 **[Course Project information](project.md)**
 
