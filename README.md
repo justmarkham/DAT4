@@ -35,13 +35,14 @@ Monday | Wednesday
 ### Class 1: Introduction
 * Introduction to General Assembly
 * Course overview: our philosophy and expectations ([slides](slides/01_course_overview.pdf))
-* Data science overview
+* Data science overview ([slides](slides/01_intro_to_data_science.pdf))
 * Tools: check for proper setup of Anaconda, overview of Slack
 
 **Homework:**
 * Resolve any installation issues before next class.
 
 **Optional:**
+* Review the [code](code/00_python_refresher.py) from Saturday's Python refresher for a recap of some Python basics.
 * Read [Analyzing the Analyzers](http://cdn.oreillystatic.com/oreilly/radarreport/0636920029014/Analyzing_the_Analyzers.pdf) for a useful look at the different types of data scientists.
 * Subscribe to the [Data Community DC newsletter](http://www.datacommunitydc.org/thenewsletter/) or check out their [event calendar](http://www.datacommunitydc.org/calendar) to become acquainted with the local data community.
 
