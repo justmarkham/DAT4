@@ -48,17 +48,20 @@ Monday | Wednesday
 
 
 ### Class 2: Python
-* Overview of Python environments
-* Python self-test
-* Getting data into Python from a [public data source](public_data.md)
+* Brief overview of Python environments: Python interpreter, IPython interpreter, Spyder
+* Python quiz
 * Working with data in Python
+    * Obtain data from a [public data source](public_data.md)
+    * [FiveThirtyEight alcohol data](https://github.com/fivethirtyeight/data/tree/master/alcohol-consumption), [with continent column](data/drinks.csv)
+    * Open in [Sublime Text](http://www.sublimetext.com/3)
+    * Reading and writing files in Python
 * Overview of course project
-* Check for proper setup of Git by running `git clone https://github.com/justmarkham/DAT-project-examples.git`
 
 **Homework:**
-* Python exercise and expected results
+* [Python exercise](code/02_file_io_homework.py)
 * Read through the [project page](project.md) in detail.
 * Review a few [projects from past Data Science courses](https://github.com/justmarkham/DAT-project-examples) to get a sense of the variety and scope of student projects.
+    * Check for proper setup of Git by running `git clone https://github.com/justmarkham/DAT-project-examples.git`
 
 **Optional:**
 * If you need more practice with Python, review the "Python Overview" section of [A Crash Course in Python](http://nbviewer.ipython.org/gist/rpmuller/5920182), work through some of [Codecademy's Python course](http://www.codecademy.com/en/tracks/python), or work through [Google's Python Class](https://developers.google.com/edu/python/) and its exercises.
