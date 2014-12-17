@@ -52,7 +52,7 @@ Monday | Wednesday
 * Python quiz
 * Working with data in Python
     * Obtain data from a [public data source](public_data.md)
-    * [FiveThirtyEight alcohol data](https://github.com/fivethirtyeight/data/tree/master/alcohol-consumption), [with continent column](data/drinks.csv)
+    * [FiveThirtyEight alcohol data](https://github.com/fivethirtyeight/data/tree/master/alcohol-consumption), and [revised data](data/drinks.csv) (continent column added)
     * Open in [Sublime Text](http://www.sublimetext.com/3)
     * Reading and writing files in Python
 * Overview of course project
