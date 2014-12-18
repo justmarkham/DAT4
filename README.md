@@ -53,9 +53,7 @@ Monday | Wednesday
 * Working with data in Python
     * Obtain data from a [public data source](public_data.md)
     * [FiveThirtyEight alcohol data](https://github.com/fivethirtyeight/data/tree/master/alcohol-consumption), and [revised data](data/drinks.csv) (continent column added)
-    * Open in [Sublime Text](http://www.sublimetext.com/3)
     * Reading and writing files in Python
-* Overview of course project
 
 **Homework:**
 * [Python exercise](code/02_file_io_homework.py)
@@ -73,6 +71,7 @@ Monday | Wednesday
 
 ### Class 3: Getting Data
 * Checking your homework
+* Any questions about the course project?
 * APIs
 * Web scraping
 * Regular expressions
