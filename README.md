@@ -53,7 +53,7 @@ Monday | Wednesday
 * Working with data in Python
     * Obtain data from a [public data source](public_data.md)
     * [FiveThirtyEight alcohol data](https://github.com/fivethirtyeight/data/tree/master/alcohol-consumption), and [revised data](data/drinks.csv) (continent column added)
-    * Reading and writing files in Python
+    * Reading and writing files in Python ([code](code/02_file_io.py))
 
 **Homework:**
 * [Python exercise](code/02_file_io_homework.py)
