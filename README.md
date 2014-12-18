@@ -49,7 +49,7 @@ Monday | Wednesday
 
 ### Class 2: Python
 * Brief overview of Python environments: Python interpreter, IPython interpreter, Spyder
-* Python quiz
+* Python quiz ([solution](code/02_python_quiz_solution.py))
 * Working with data in Python
     * Obtain data from a [public data source](public_data.md)
     * [FiveThirtyEight alcohol data](https://github.com/fivethirtyeight/data/tree/master/alcohol-consumption), and [revised data](data/drinks.csv) (continent column added)
