@@ -78,7 +78,10 @@ Monday | Wednesday
 
 **Homework:**
 * Think about your project question, and start looking for data that will help you to answer your question.
-* To prepare for our next class on Git, you'll need to know some command line basics. Please work through GA's excellent [command line tutorial](http://generalassembly.github.io/prework/command-line/#/), and then take this brief [quiz](https://gahub.typeform.com/to/J6xirf).
+* Prepare for our next class on Git and GitHub:
+    * You'll need to know some command line basics, so please work through GA's excellent [command line tutorial](http://generalassembly.github.io/prework/command-line/#/) and then take this brief [quiz](https://gahub.typeform.com/to/J6xirf).
+    * Check for proper setup of Git by running `git clone https://github.com/justmarkham/DAT-project-examples.git`. If that doesn't work, you probably need to [install Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+    * Create a [GitHub account](https://github.com/). (You don't need to download anything from GitHub.)
 
 **Optional:**
 * If you aren't feeling comfortable with the Python we've done so far, keep practicing using the resources above!
