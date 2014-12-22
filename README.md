@@ -89,7 +89,19 @@ Monday | Wednesday
 
 ### Class 4: Git and GitHub
 * Special guest: Nick DePrey presenting his class project from DAT2
-* Git and GitHub
+* Git and GitHub ([slides](slides/04_git_github.pdf))
+
+**Homework:**
+* Project milestone: Submit your [question and data set](project.md) to your folder in [DAT4-students](https://github.com/justmarkham/DAT4-students) before class on Wednesday! (This is a great opportunity to practice writing Markdown and creating a pull request.)
+
+**Optional:**
+* Clone this repo (DAT4) for easy access to the course files.
+
+**Resources:**
+* Read the first two chapters of [Pro Git](http://git-scm.com/book/en/v2) to gain a much deeper understanding of version control and basic Git commands.
+* [GitRef](http://gitref.org/) is an excellent reference guide for Git commands.
+* [Git quick reference for beginners](http://www.dataschool.io/git-quick-reference-for-beginners/) is a shorter reference guide with commands grouped by workflow.
+* The [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) covers standard Markdown and a bit of "[GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)."
 
 
 ### Class 5: Pandas
