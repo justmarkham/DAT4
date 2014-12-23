@@ -31,7 +31,7 @@ pattern3 = re.compile('[cfg]')
 re.search(pattern3, alphabet).group(0)
 
 mystery_pattern = re.compile("\d+-\d+-\d+")
-# take a few minutes, and discuss, what application could these myster_patterns have
+# take a few minutes, and discuss, what application could this mystery_pattern have
 re.search(mystery_pattern, "my phone number is 609-462-6706 dude").group(0)
 
 
@@ -42,7 +42,5 @@ re.search(anything_pattern, all_of_the_text).group(0)
 
 # \w matches any word character, alphanumeric
 # if you want to match an actual period, do \.
-email_pattern = re.compile("--------")
-# take a few minutes, and discuss, what application could these myster_patterns have
-re.search(mystery_pattern, "my email address is sinan.u.ozdemir@gmail.com").group(0)
-
+email_pattern = re.compile("[\w\.]+@\w+\.com")
+re.search(email_pattern, "my email address is sinan.u.ozdemir@gmail.com").group(0)

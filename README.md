@@ -71,7 +71,7 @@ Monday | Wednesday
 
 ### Class 3: Getting Data
 * Checking your homework
-* Regular expressions, web scraping, APIs ([slides](slides/03_getting_data.pdf))
+* Regular expressions, web scraping, APIs ([slides](slides/03_getting_data.pdf), [regex code](code/03_re_example.py), [web scraping and API code](code/03_getting_data.py))
 * Any questions about the course project?
 
 **Homework:**
