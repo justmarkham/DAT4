@@ -71,10 +71,8 @@ Monday | Wednesday
 
 ### Class 3: Getting Data
 * Checking your homework
+* Regular expressions, web scraping, APIs ([slides](slides/03_getting_data.pdf))
 * Any questions about the course project?
-* APIs
-* Web scraping
-* Regular expressions
 
 **Homework:**
 * Think about your project question, and start looking for data that will help you to answer your question.
@@ -85,6 +83,10 @@ Monday | Wednesday
 
 **Optional:**
 * If you aren't feeling comfortable with the Python we've done so far, keep practicing using the resources above!
+
+**Resources:**
+* [regex101](https://regex101.com/#python) is an excellent tool for testing your regular expressions. For learning more regular expressions, Google's Python Class includes an [excellent regex lesson](https://developers.google.com/edu/python/regular-expressions) (which includes a [video](http://www.youtube.com/watch?v=kWyoYtvJpe4)).
+* [Mashape](https://www.mashape.com/explore) and [Apigee](https://apigee.com/providers) allow you to explore tons of different APIs. Alternatively, a [Python API wrapper](http://www.pythonforbeginners.com/api/list-of-python-apis) is available for many popular APIs.
 
 
 ### Class 4: Git and GitHub
