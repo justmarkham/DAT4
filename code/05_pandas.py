@@ -38,6 +38,7 @@ users.describe()        # summarize all numeric columns
 users.index             # "the index" (aka "the labels")
 users.columns           # column names (which is "an index")
 users.dtypes            # data types of each column
+users.shape             # number of rows and columns
 users.values            # underlying numpy array
 users.info()            # concise summary
 
@@ -197,20 +198,21 @@ drinks = pd.read_csv('../data/drinks.csv', na_filter=False)
 # add a new column as a function of existing columns
 # note: can't assign to an attribute such as 'drinks.total_servings'
 drinks['total_servings'] = drinks.beer_servings + drinks.spirit_servings + drinks.wine_servings
+drinks['alcohol_mL'] = drinks.total_litres_of_pure_alcohol * 1000
 drinks.head()
 
 # alternative method: default is column sums, 'axis=1' does row sums instead
 drinks['total_servings'] = drinks.loc[:, 'beer_servings':'wine_servings'].sum(axis=1)
 
 # rename a column
-drinks.rename(columns={'total_litres_of_pure_alcohol':'pure_alcohol'}, inplace=True)
+drinks.rename(columns={'total_litres_of_pure_alcohol':'alcohol_litres'}, inplace=True)
 
 # hide a column (temporarily)
 drinks.drop(['total_servings'], axis=1)     # use 'axis=0' to drop rows instead
 drinks[drinks.columns[:-1]]                 # slice 'columns' attribute like a list
 
 # delete a column (permanently)
-del drinks['total_litres_of_pure_alcohol']
+del drinks['alcohol_mL']
 
 
 '''
@@ -266,6 +268,9 @@ drinks.plot(x='beer_servings', y='wine_servings', kind='scatter', alpha=0.3)
 colors = np.where(drinks.continent=='EU', 'r', 'b')
 drinks.plot(x='beer_servings', y='wine_servings', kind='scatter', c=colors)
 
+# scatterplot matrix of all numerical columns
+pd.scatter_matrix(drinks)
+
 
 '''
 Advanced Filtering (of rows) and Selecting (of columns)
@@ -313,9 +318,14 @@ movie_ratings.head()
 Further Exploration of MovieLens Data
 '''
 
-# for each occupation, calculate mean age and age range
+# for each occupation, calculate mean age
 users.groupby('occupation').age.mean()
-users.groupby('occupation').age.apply(lambda x: x.max() - x.min())
+users.groupby('occupation').age.agg(np.mean)    # equivalent
+
+# for each occupation, calculate age range
+users.groupby('occupation').age.agg([np.min, np.max])
+users.groupby('occupation').age.agg([np.min, np.max]).sort('amin')  # sort by minimum
+users.groupby('occupation').age.agg(lambda x: x.max() - x.min())    # calculate a single value
 
 # for each occupation/gender combination, calculate mean age
 users.groupby(['occupation', 'gender']).age.mean()
@@ -340,6 +350,48 @@ movie_stats[movie_stats.rating.size > 100].sort_index(by=('rating', 'mean'))
 '''
 Other Useful Features
 '''
+
+# limit which rows are read when reading in a file
+pd.read_csv('../data/drinks.csv', nrows=10)         # only read first 10 rows
+pd.read_csv('../data/drinks.csv', skiprows=[1, 2])  # skip the first two rows of data
+
+# replace existing column headers when reading in a file
+col_names = ['country', 'beer', 'spirit', 'wine', 'alcohol', 'continent']
+pd.read_csv('../data/drinks.csv', header=0, names=col_names)
+
+# create a DataFrame from a dictionary of lists
+pd.DataFrame({'state':['AL', 'AK', 'AZ'], 'capital':['Montgomery', 'Juneau', 'Phoenix']})
+
+# Series have many useful string methods (accessed via 'str')
+drinks.country.str.upper()                  # returns uppercase Series
+drinks.country.str.contains('Aus')          # returns a Series of booleans...
+drinks[drinks.country.str.contains('Aus')]  # ...which can be used for filtering
+
+# only select columns with names that match a specific pattern
+cols = pd.Series(drinks.columns)
+drinks[cols[cols.str.contains('servings')]]
+
+# replace all instances of a value (supports 'inplace=True' argument)
+drinks.continent.replace('EU', 'EUR')   # replace values in a Series
+drinks.replace('USA', 'United States')  # replace values throughout a DataFrame
+
+# map categories of values to other categories
+drinks['hemisphere'] = drinks.continent.map({'NA':'West', 'SA':'West', 'EU':'East', 'AF':'East', 'AS':'East', 'OC':'East'})
+
+# convert a range of values into a boolean
+drinks['high_beer_level'] = drinks.beer_servings.between(200, drinks.beer_servings.max())
+
+# display a cross-tabulation of two categories
+pd.crosstab(drinks.continent, drinks.high_beer_level)
+
+# create dummy variables for 'continent' and add them to the DataFrame
+cont_dummies = pd.get_dummies(drinks.continent, prefix='cont').iloc[:, 1:]  # exclude first column
+drinks = pd.concat([drinks, cont_dummies], axis=1)  # axis=0 for rows, axis=1 for columns
+
+# randomly sample a DataFrame
+mask = np.random.rand(len(drinks)) < 0.66   # create a Series of booleans
+train = drinks[mask]                        # will contain about 66% of the rows
+test = drinks[~mask]                        # will contain the remaining rows
 
 # change the maximum number of rows and columns printed ('None' means unlimited)
 pd.set_option('max_rows', None)     # default is 60 rows
