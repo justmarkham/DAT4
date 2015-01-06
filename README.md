@@ -56,7 +56,7 @@ Monday | Wednesday
     * Reading and writing files in Python ([code](code/02_file_io.py))
 
 **Homework:**
-* [Python exercise](code/02_file_io_homework.py)
+* [Python exercise](code/02_file_io_homework.py) ([solution](code/02_file_io_homework_solution.py))
 * Read through the [project page](project.md) in detail.
 * Review a few [projects from past Data Science courses](https://github.com/justmarkham/DAT-project-examples) to get a sense of the variety and scope of student projects.
     * Check for proper setup of Git by running `git clone https://github.com/justmarkham/DAT-project-examples.git`
