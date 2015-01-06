@@ -40,7 +40,7 @@ users.columns           # column names (which is "an index")
 users.dtypes            # data types of each column
 users.shape             # number of rows and columns
 users.values            # underlying numpy array
-users.info()            # concise summary
+users.info()            # concise summary (includes memory usage as of pandas 0.15.0)
 
 # select a column
 users['gender']         # select one column
@@ -50,6 +50,10 @@ users.gender            # select one column using the DataFrame attribute
 # summarize a single column
 users.gender.describe()         # describe the gender Series (non-numeric)
 users.gender.value_counts()     # for each gender, count number of occurrences
+
+# summarize all columns (new in pandas 0.15.0)
+users.describe(include='all')       # describe all Series
+users.describe(include=['object'])  # limit to one (or more) types
 
 # select multiple columns
 users[['age', 'gender']]        # select two columns
@@ -76,10 +80,11 @@ users.sort_index(by='age', ascending=False) # use descending order instead
 users.sort_index(by=['occupation', 'age'])  # sort by multiple columns
 
 # detecting duplicate rows
-users.duplicated()                  # Series of booleans
-users.duplicated().sum()            # count of duplicates
-users[users.duplicated()]           # only show duplicates
-users[users.duplicated()==False]    # only show unique rows
+users.duplicated()          # Series of booleans (True if a row is identical to a previous row)
+users.duplicated().sum()    # count of duplicates
+users[users.duplicated()]   # only show duplicates
+users.drop_duplicates()     # drop duplicate rows
+users.age.duplicated()      # check a single column for duplicates
 users.duplicated(['age', 'gender', 'zip_code']).sum()   # specify columns for finding duplicates
 
 
@@ -181,7 +186,7 @@ drinks.dtypes           # type is 'object' because list elements were strings
 
 # fix data types of numeric columns
 num_cols = drinks.columns[1:5]                      # create list of numeric columns
-drinks[num_cols] = drinks[num_cols].astype(float)   # convert them to type 'float'
+drinks[num_cols] = drinks[num_cols].astype('float') # convert them to type 'float'
 
 # write a DataFrame out to a CSV
 drinks.to_csv('../data/drinks_updated.csv')                 # index is used as first column
@@ -196,7 +201,7 @@ Adding, Renaming, and Removing Columns
 drinks = pd.read_csv('../data/drinks.csv', na_filter=False)
 
 # add a new column as a function of existing columns
-# note: can't assign to an attribute such as 'drinks.total_servings'
+# note: can't (usually) assign to an attribute (e.g., 'drinks.total_servings')
 drinks['total_servings'] = drinks.beer_servings + drinks.spirit_servings + drinks.wine_servings
 drinks['alcohol_mL'] = drinks.total_litres_of_pure_alcohol * 1000
 drinks.head()
@@ -257,12 +262,17 @@ plt.xlabel('Beer Servings')
 drinks.beer_servings.hist(by=drinks.continent)
 drinks.beer_servings.hist(by=drinks.continent, sharex=True)
 drinks.beer_servings.hist(by=drinks.continent, sharex=True, sharey=True)
+drinks.beer_servings.hist(by=drinks.continent, layout=(2, 3))   # change layout (new in pandas 0.15.0)
 
 # boxplot of beer servings by continent (shows five-number summary and outliers)
 drinks.boxplot(column='beer_servings', by='continent')
 
 # scatterplot of beer servings versus wine servings
-drinks.plot(x='beer_servings', y='wine_servings', kind='scatter', alpha=0.3)
+drinks.plot(kind='scatter', x='beer_servings', y='wine_servings', alpha=0.3)
+
+# same scatterplot, except point color varies by 'spirit_servings'
+# note: must use 'c=drinks.spirit_servings' prior to pandas 0.15.0
+drinks.plot(kind='scatter', x='beer_servings', y='wine_servings', c='spirit_servings', colormap='Blues')
 
 # same scatterplot, except all European countries are colored red
 colors = np.where(drinks.continent=='EU', 'r', 'b')
@@ -375,14 +385,20 @@ drinks[cols[cols.str.contains('servings')]]
 drinks.continent.replace('EU', 'EUR')   # replace values in a Series
 drinks.replace('USA', 'United States')  # replace values throughout a DataFrame
 
-# map categories of values to other categories
+# map values to other values
 drinks['hemisphere'] = drinks.continent.map({'NA':'West', 'SA':'West', 'EU':'East', 'AF':'East', 'AS':'East', 'OC':'East'})
 
-# convert a range of values into a boolean
-drinks['high_beer_level'] = drinks.beer_servings.between(200, drinks.beer_servings.max())
+# convert a range of values into descriptive groups
+drinks['beer_level'] = 'low'    # initially set all values to 'low'
+drinks.loc[drinks.beer_servings.between(101, 200), 'beer_level'] = 'med'    # change 101-200 to 'med'
+drinks.loc[drinks.beer_servings.between(201, 400), 'beer_level'] = 'high'   # change 201-400 to 'high'
 
-# display a cross-tabulation of two categories
-pd.crosstab(drinks.continent, drinks.high_beer_level)
+# display a cross-tabulation of two Series
+pd.crosstab(drinks.continent, drinks.beer_level)
+
+# convert 'beer_level' into the 'category' data type (new in pandas 0.15.0)
+drinks['beer_level'] = pd.Categorical(drinks.beer_level, categories=['low', 'med', 'high'])
+drinks.sort_index(by='beer_level')      # sorts by the categorical ordering (low to high)
 
 # create dummy variables for 'continent' and add them to the DataFrame
 cont_dummies = pd.get_dummies(drinks.continent, prefix='cont').iloc[:, 1:]  # exclude first column
