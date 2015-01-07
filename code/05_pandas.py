@@ -224,7 +224,8 @@ Plotting
 drinks.continent.value_counts().plot(kind='bar', title='Countries per Continent')
 plt.xlabel('Continent')
 plt.ylabel('Count')
-plt.show()
+plt.show()                                  # show plot window (if it doesn't automatically appear)
+plt.savefig('countries_per_continent.png')  # save plot to file
 
 # bar plot of average number of beer servings (per adult per year) by continent
 drinks.groupby('continent').beer_servings.mean().plot(kind='bar')
