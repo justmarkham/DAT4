@@ -145,8 +145,7 @@ drinks = pd.read_csv('../data/drinks.csv')
 drinks.loc[192, 'beer_servings':'wine_servings'] = np.nan
 
 # missing values are often just excluded
-drinks.describe()                           # excludes missing values
-drinks.continent.value_counts()             # excludes missing values
+drinks.describe(include='all')              # excludes missing values
 drinks.continent.value_counts(dropna=False) # includes missing values (new in pandas 0.14.1)
 
 # find missing values in a Series
@@ -213,8 +212,8 @@ drinks['total_servings'] = drinks.loc[:, 'beer_servings':'wine_servings'].sum(ax
 drinks.rename(columns={'total_litres_of_pure_alcohol':'alcohol_litres'}, inplace=True)
 
 # hide a column (temporarily)
-drinks.drop(['total_servings'], axis=1)     # use 'axis=0' to drop rows instead
-drinks[drinks.columns[:-1]]                 # slice 'columns' attribute like a list
+drinks.drop(['alcohol_mL'], axis=1)     # use 'axis=0' to drop rows instead
+drinks[drinks.columns[:-1]]             # slice 'columns' attribute like a list
 
 # delete a column (permanently)
 del drinks['alcohol_mL']
@@ -313,15 +312,18 @@ Joining Data
 m_cols = ['movie_id', 'title']
 movies = pd.read_table('../data/u.item', header=None, names=m_cols, sep='|', usecols=[0, 1])
 movies.head()
+movies.shape
 
 # read 'u.data' into 'ratings'
 r_cols = ['user_id', 'movie_id', 'rating', 'unix_timestamp']
 ratings = pd.read_table('../data/u.data', header=None, names=r_cols, sep='\t')
 ratings.head()
+ratings.shape
 
 # merge 'movies' and 'ratings' (inner join on 'movie_id')
 movie_ratings = pd.merge(movies, ratings)
 movie_ratings.head()
+movie_ratings.shape
 
 
 '''
