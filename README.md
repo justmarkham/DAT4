@@ -112,6 +112,7 @@ Monday | Wednesday
     * Simple examples of [joins in Pandas](http://www.gregreda.com/2013/10/26/working-with-pandas-dataframes/#joining)
 
 **Homework:**
+
 Check out this excellent example of [data wrangling and exploration in Pandas](http://nbviewer.ipython.org/github/cs109/content/blob/master/lec_04_wrangling.ipynb).
 
 * Assignment:
