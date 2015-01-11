@@ -124,9 +124,21 @@ Monday | Wednesday
 
 
 ### Class 6: Numpy, Machine Learning, KNN
+* Numpy
+* Machine Learning and K-Nearest Neighbors
+
+**Homework:**
+* Read this excellent article, [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html), and be prepared to discuss it in class on Wednesday. (You can ignore sections 4.2 and 4.3.)
 
 
 ### Class 7: scikit-learn, Model Evaluation Procedures
+* Introduction to scikit-learn with iris data ([code](code/07_sklearn_knn.py))
+* Exploring the scikit-learn documentation: [user guide](http://scikit-learn.org/stable/modules/neighbors.html), [module reference](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.neighbors), [class documentation](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
+* Discuss the [article](http://scott.fortmann-roe.com/docs/BiasVariance.html) on the bias-variance tradeoff
+* Model evaluation procedures ([slides](slides/07_model_evaluation_procedures.pdf), [code](code/07_model_evaluation_procedures.py))
+
+**Homework:**
+* Keep working on your project. Your [data exploration and analysis plan](project.md) is due in two weeks!
 
 
 ### Class 8: Linear Regression
