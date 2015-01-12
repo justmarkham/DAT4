@@ -128,7 +128,17 @@ Monday | Wednesday
 * Machine Learning and K-Nearest Neighbors
 
 **Homework:**
-* Read this excellent article, [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html), and be prepared to discuss it in class on Wednesday. (You can ignore sections 4.2 and 4.3.)
+* Read this excellent article, [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html), and be prepared to discuss it in class on Wednesday. (You can ignore sections 4.2 and 4.3.) Here are some questions to think about while you read:
+    * In the Party Registration example, what are the features? What is the response? Is this a regression or classification problem?
+    * In the interactive visualization, try using different values for K across different sets of training data. What value of K do you think is "best"? How do you define "best"?
+    * In the visualization, what do the lighter colors versus the darker colors mean? How is the darkness calculated?
+    * How does the choice of K affect model bias? How about variance?
+    * As you experiment with K and generate new training data, how can you "see" high versus low variance? How can you "see" high versus low bias?
+    * Why should we care about variance at all? Shouldn't we just minimize bias and ignore variance?
+    * Does a high value for K cause over-fitting or under-fitting?
+
+**Optional:**
+* For a more in-depth look at machine learning, read section 2.1 (14 pages) of Hastie and Tibshirani's excellent book, [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/). (It's a free PDF download!)
 
 
 ### Class 7: scikit-learn, Model Evaluation Procedures
@@ -139,6 +149,10 @@ Monday | Wednesday
 
 **Homework:**
 * Keep working on your project. Your [data exploration and analysis plan](project.md) is due in two weeks!
+
+**Optional:**
+* For a more in-depth look at today's topics, these videos from Hastie and Tibshirani are useful: [overfitting and train/test split](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes). Note that they will touch on some concepts we haven't yet covered. Also note that they use the terminology "validation set" instead of "test set".
+* Alternatively, read section 5.1 (12 pages) of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/), which covers the same content as the videos.
 
 
 ### Class 8: Linear Regression
