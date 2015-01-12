@@ -124,8 +124,9 @@ Monday | Wednesday
 
 
 ### Class 6: Numpy, Machine Learning, KNN
-* Numpy
-* Machine Learning and K-Nearest Neighbors
+* Numpy ([code](code/06_numpy.py))
+* "Human learning" with iris data ([code](code/06_iris_prework.py))
+* Machine Learning and K-Nearest Neighbors ([slides](slides/06_ml_knn.pdf))
 
 **Homework:**
 * Read this excellent article, [Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html), and be prepared to discuss it in class on Wednesday. (You can ignore sections 4.2 and 4.3.) Here are some questions to think about while you read:
