@@ -138,7 +138,7 @@ Monday | Wednesday
     * Why should we care about variance at all? Shouldn't we just minimize bias and ignore variance?
     * Does a high value for K cause over-fitting or under-fitting?
 
-**Optional:**
+**Resources:**
 * For a more in-depth look at machine learning, read section 2.1 (14 pages) of Hastie and Tibshirani's excellent book, [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/). (It's a free PDF download!)
 
 
@@ -156,6 +156,8 @@ Monday | Wednesday
     * If you have gathered your project data already: Try using KNN for classification, and then evaluate your model. Don't worry about using all of your features, just focus on getting the end-to-end process working in scikit-learn. (Even if your project is regression instead of classification, you can easily convert a regression problem into a classification problem by converting numerical ranges into categories.)
     * If you don't yet have your project data: Pick a suitable dataset from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets.html), try using KNN for classification, and evaluate your model. The [Glass Identification Data Set](http://archive.ics.uci.edu/ml/datasets/Glass+Identification) is a good one to start with.
     * Either way, you can submit your commented code to DAT4-students, and we'll give you feedback.
+
+**Resources:**
 * For a more in-depth look at today's topics, these videos from Hastie and Tibshirani are useful: [overfitting and train/test split](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14 minutes), [cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes). Note that they will touch on some concepts we haven't yet covered. Also note that they use the terminology "validation set" instead of "test set".
     * Alternatively, read section 5.1 (12 pages) of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/), which covers the same content as the videos.
 
