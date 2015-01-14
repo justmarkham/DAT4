@@ -125,7 +125,7 @@ Monday | Wednesday
 
 ### Class 6: Numpy, Machine Learning, KNN
 * Numpy ([code](code/06_numpy.py))
-* "Human learning" with iris data ([code](code/06_iris_prework.py))
+* "Human learning" with iris data ([code](code/06_iris_prework.py), [solution](code/06_iris_solution.py))
 * Machine Learning and K-Nearest Neighbors ([slides](slides/06_ml_knn.pdf))
 
 **Homework:**

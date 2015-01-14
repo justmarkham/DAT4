@@ -1,6 +1,5 @@
-
 '''
-SOLUTIONS: "Human Learning" with iris data
+EXERCISE: "Human Learning" with iris data
 '''
 
 from sklearn.datasets import load_iris
