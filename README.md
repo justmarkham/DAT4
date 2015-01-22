@@ -167,6 +167,12 @@ Monday | Wednesday
 ### Class 8: Linear Regression
 * Linear regression ([IPython notebook](http://nbviewer.ipython.org/github/justmarkham/DAT4/blob/master/notebooks/08_linear_regression.ipynb))
 
+**Homework:**
+* Keep working on your project. Your [data exploration and analysis plan](project.md) is due next Wednesday!
+
+**Optional:**
+* Similar to last class, your optional exercise is to practice what we have been learning in class, either on your project data or on another dataset.
+
 **Resources:**
 * To go much more in-depth on linear regression, read Chapter 3 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/), from which this lesson was adapted. Alternatively, watch the [related videos](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) or read my [quick reference guide](http://www.dataschool.io/applying-and-interpreting-linear-regression/) to the key points in that chapter.
 * To learn more about Statsmodels and how to interpret the output, DataRobot has some decent posts on [simple linear regression](http://www.datarobot.com/blog/ordinary-least-squares-in-python/) and [multiple linear regression](http://www.datarobot.com/blog/multiple-regression-using-statsmodels/).
