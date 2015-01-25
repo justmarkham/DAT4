@@ -184,6 +184,22 @@ Monday | Wednesday
 
 
 ### Class 10: Model Evaluation Metrics
+* Finishing model evaluation procedures ([slides](slides/07_model_evaluation_procedures.pdf), [code](code/07_model_evaluation_procedures.py))
+    * Review of test set approach
+    * Cross-validation
+* Model evaluation metrics ([slides](slides/10_model_evaluation_metrics.pdf))
+    * Regression: Root Mean Squared Error ([code](code/10_rmse.py))
+    * Brief discussion: [Smart Autofill](http://googleresearch.blogspot.com/2014/10/smart-autofill-harnessing-predictive.html)
+    * Classification: confusion matrix, ROC curve ([video](https://www.youtube.com/watch?v=OAl6eAyP-yo), [code](code/10_confusion_roc.py))
+
+**Homework:**
+* Watch Kevin's [project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for a review of the end-to-end machine learning process.
+
+**Resources:**
+* scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html).
+* The Kaggle wiki has a decent page describing other common [model evaluation metrics](https://www.kaggle.com/wiki/Metrics).
+* Kevin wrote a [simple guide to confusion matrix terminology](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) that you can use as a reference guide.
+* Kevin's [blog post about the ROC video](http://www.dataschool.io/roc-curves-and-auc-explained/) includes the complete transcript and screenshots, in case you learn better by reading instead of watching.
 
 
 ### Class 11: Working a Data Problem
