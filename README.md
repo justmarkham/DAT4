@@ -188,12 +188,18 @@ Monday | Wednesday
     * Review of test set approach
     * Cross-validation
 * Model evaluation metrics ([slides](slides/10_model_evaluation_metrics.pdf))
-    * Regression: Root Mean Squared Error ([code](code/10_rmse.py))
-    * Brief discussion: [Smart Autofill](http://googleresearch.blogspot.com/2014/10/smart-autofill-harnessing-predictive.html)
-    * Classification: confusion matrix, ROC curve ([video](https://www.youtube.com/watch?v=OAl6eAyP-yo), [code](code/10_confusion_roc.py))
+    * Regression:
+        * Root Mean Squared Error ([code](code/10_rmse.py))
+        * Article discussion: [Smart Autofill](http://googleresearch.blogspot.com/2014/10/smart-autofill-harnessing-predictive.html)
+    * Classification:
+        * Confusion matrix ([code](code/10_confusion_roc.py))
+        * ROC curve ([video](https://www.youtube.com/watch?v=OAl6eAyP-yo))
 
 **Homework:**
-* Watch Kevin's [project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for a review of the end-to-end machine learning process.
+* Watch Kevin's [Kaggle project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for an overview of the end-to-end machine learning process, including some aspects that we have not yet covered in class.
+
+**Optional:**
+* For more on Kaggle, watch [Kaggle Transforms Data Science Into Competitive Sport](https://www.youtube.com/watch?v=8w4UY66GKcM) (28 minutes).
 
 **Resources:**
 * scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html).
