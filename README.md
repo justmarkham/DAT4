@@ -181,6 +181,13 @@ Monday | Wednesday
 
 
 ### Class 9: Logistic Regression, Preview of Other Models
+* Logistic regression ([slides](slides/09_logistic_regression.pdf), [exercise](code/09_logistic_regression_exercise.py), [solution](code/09_logistic_regression_class.py))
+* Preview of other models
+
+**Resources:**
+* Mathematicalmonk has a nice video (15 minutes) on the [intuition behind logistic regression](https://www.youtube.com/watch?v=-Z2a_mzl9LM&list=PLD0F06AA0D2E8FFBA).
+* UCLA's IDRE has a handy table to help you remember the [relationship between probability, odds, and log-odds](http://www.ats.ucla.edu/stat/mult_pkg/faq/general/odds_ratio.htm).
+* Better Explained has a very friendly introduction (with lots of examples) to the [intuition behind "e"](http://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/).
 
 
 ### Class 10: Model Evaluation Metrics
