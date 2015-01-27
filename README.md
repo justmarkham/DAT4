@@ -181,10 +181,6 @@ Monday | Wednesday
 
 
 ### Class 9: Logistic Regression, Preview of Other Models
-<<<<<<< HEAD
-* Logistic Regression ([slides](slides/09_logistic_regression.pdf), [code](code/09_logistic_regression_class.py))
-	* Review of theory and sklearn
-=======
 * Logistic regression ([slides](slides/09_logistic_regression.pdf), [exercise](code/09_logistic_regression_exercise.py), [solution](code/09_logistic_regression_class.py))
 * Preview of other models
 
@@ -192,11 +188,6 @@ Monday | Wednesday
 * For more on logistic regression, watch the [first three videos](https://www.youtube.com/playlist?list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE) (30 minutes total) from Chapter 4 of An Introduction to Statistical Learning.
 * UCLA's IDRE has a handy table to help you remember the [relationship between probability, odds, and log-odds](http://www.ats.ucla.edu/stat/mult_pkg/faq/general/odds_ratio.htm).
 * Better Explained has a very friendly introduction (with lots of examples) to the [intuition behind "e"](http://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/).
->>>>>>> e4c0026db010c89bc021bfdec4aee91280ca0889
-
-
-**Resources:**
-Chapter 4 of An Introduction to Statistical Learning has many good examples from which this lesson was adapted. Alternatively, Here is a related [website](http://www.datarobot.com/blog/classification-with-scikit-learn/) by DataRobot!
 
 ### Class 10: Model Evaluation Metrics
 * Finishing model evaluation procedures ([slides](slides/07_model_evaluation_procedures.pdf), [code](code/07_model_evaluation_procedures.py))
