@@ -181,8 +181,18 @@ Monday | Wednesday
 
 
 ### Class 9: Logistic Regression, Preview of Other Models
+<<<<<<< HEAD
 * Logistic Regression ([slides](slides/09_logistic_regression.pdf), [code](code/09_logistic_regression_class.py))
 	* Review of theory and sklearn
+=======
+* Logistic regression ([slides](slides/09_logistic_regression.pdf), [exercise](code/09_logistic_regression_exercise.py), [solution](code/09_logistic_regression_class.py))
+* Preview of other models
+
+**Resources:**
+* For more on logistic regression, watch the [first three videos](https://www.youtube.com/playlist?list=PL5-da3qGB5IC4vaDba5ClatUmFppXLAhE) (30 minutes total) from Chapter 4 of An Introduction to Statistical Learning.
+* UCLA's IDRE has a handy table to help you remember the [relationship between probability, odds, and log-odds](http://www.ats.ucla.edu/stat/mult_pkg/faq/general/odds_ratio.htm).
+* Better Explained has a very friendly introduction (with lots of examples) to the [intuition behind "e"](http://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/).
+>>>>>>> e4c0026db010c89bc021bfdec4aee91280ca0889
 
 
 **Resources:**
@@ -211,6 +221,7 @@ Chapter 4 of An Introduction to Statistical Learning has many good examples from
 * The Kaggle wiki has a decent page describing other common [model evaluation metrics](https://www.kaggle.com/wiki/Metrics).
 * Kevin wrote a [simple guide to confusion matrix terminology](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) that you can use as a reference guide.
 * Kevin's [blog post about the ROC video](http://www.dataschool.io/roc-curves-and-auc-explained/) includes the complete transcript and screenshots, in case you learn better by reading instead of watching.
+* Rahul Patwari has two excellent and highly accessible videos on [Sensitivity and Specificity](https://www.youtube.com/watch?v=U4_3fditnWg&list=PL41ckbAGB5S2PavLIXUETzAmi5reIod23) (9 minutes) and [ROC Curves](https://www.youtube.com/watch?v=21Igj5Pr6u4&list=PL41ckbAGB5S2PavLIXUETzAmi5reIod23) (12 minutes).
 
 
 ### Class 11: Working a Data Problem
