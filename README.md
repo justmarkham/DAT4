@@ -181,7 +181,12 @@ Monday | Wednesday
 
 
 ### Class 9: Logistic Regression, Preview of Other Models
+* Logistic Regression ([slides](slides/09_logistic_regression.pdf), [code](code/09_logistic_regression_class.py))
+	* Review of theory and sklearn
 
+
+**Resources:**
+Chapter 4 of An Introduction to Statistical Learning has many good examples from which this lesson was adapted. Alternatively, Here is a related [website](http://www.datarobot.com/blog/classification-with-scikit-learn/) by DataRobot!
 
 ### Class 10: Model Evaluation Metrics
 * Finishing model evaluation procedures ([slides](slides/07_model_evaluation_procedures.pdf), [code](code/07_model_evaluation_procedures.py))
