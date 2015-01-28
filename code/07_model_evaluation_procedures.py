@@ -35,7 +35,11 @@ response_train
 response_test
 
 # step 1: split data into training set and test set
-X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, random_state=4)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=4)
+X_train.shape
+X_test.shape
+y_train.shape
+y_test.shape
 
 # steps 2 and 3: calculate test set error for K=1
 knn = KNeighborsClassifier(n_neighbors=1)
@@ -49,14 +53,14 @@ knn.score(X_test, y_test)
 
 # steps 5 and 6: choose best model (K=5) and train on all data
 knn = KNeighborsClassifier(n_neighbors=5)
-knn.fit(iris.data, iris.target)
+knn.fit(X, y)
 
 # step 7: make predictions on new ("out of sample") data
 out_of_sample = [[5, 4, 3, 2], [4, 3, 2, 1]]
 knn.predict(out_of_sample)
 
 # verify that a different train/test split can result in a different test set error
-X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, random_state=1)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
 knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(X_train, y_train)
 knn.score(X_test, y_test)
@@ -83,6 +87,7 @@ scores = []
 for k in k_range:
     knn = KNeighborsClassifier(n_neighbors=k)
     scores.append(np.mean(cross_val_score(knn, X, y, cv=5, scoring='accuracy')))
+scores
 
 # plot the K values (x-axis) versus the 5-fold CV score (y-axis)
 plt.figure()
