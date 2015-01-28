@@ -204,6 +204,7 @@ Monday | Wednesday
         * ROC curve ([video](https://www.youtube.com/watch?v=OAl6eAyP-yo))
 
 **Homework:**
+* [Model evaluation homework](homework/10_model_evaluation.md), due by midnight on Sunday.
 * Watch Kevin's [Kaggle project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for an overview of the end-to-end machine learning process, including some aspects that we have not yet covered in class.
 
 **Optional:**
