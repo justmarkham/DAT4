@@ -198,7 +198,6 @@ Monday | Wednesday
 * Model evaluation metrics ([slides](slides/10_model_evaluation_metrics.pdf))
     * Regression:
         * Root Mean Squared Error ([code](code/10_rmse.py))
-        * Article discussion: [Smart Autofill](http://googleresearch.blogspot.com/2014/10/smart-autofill-harnessing-predictive.html)
     * Classification:
         * Confusion matrix ([code](code/10_confusion_roc.py))
         * ROC curve ([video](https://www.youtube.com/watch?v=OAl6eAyP-yo))
@@ -206,6 +205,7 @@ Monday | Wednesday
 **Homework:**
 * [Model evaluation homework](homework/10_model_evaluation.md), due by midnight on Sunday.
 * Watch Kevin's [Kaggle project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for an overview of the end-to-end machine learning process, including some aspects that we have not yet covered in class.
+* Read this short article on Google's [Smart Autofill](http://googleresearch.blogspot.com/2014/10/smart-autofill-harnessing-predictive.html), and see if you can figure out exactly how the system works.
 
 **Optional:**
 * For more on Kaggle, watch [Kaggle Transforms Data Science Into Competitive Sport](https://www.youtube.com/watch?v=8w4UY66GKcM) (28 minutes).
