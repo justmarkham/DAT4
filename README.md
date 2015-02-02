@@ -204,6 +204,7 @@ Monday | Wednesday
 
 **Homework:**
 * [Model evaluation homework](homework/10_model_evaluation.md), due by midnight on Sunday.
+    * [Sample solution code](code/10_glass_id_homework_solution.py).
 * Watch Kevin's [Kaggle project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for an overview of the end-to-end machine learning process, including some aspects that we have not yet covered in class.
 * Read this short article on Google's [Smart Autofill](http://googleresearch.blogspot.com/2014/10/smart-autofill-harnessing-predictive.html), and see if you can figure out exactly how the system works.
 
