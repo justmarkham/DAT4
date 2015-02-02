@@ -220,6 +220,12 @@ Monday | Wednesday
 
 
 ### Class 11: Working a Data Problem
+* Today we will work on a real world data problem! Our [data](data/ZYX_prices.csv) is stock data over 7 months of a fictional company ZYX including twitter sentiment, volume and stock price. Our goal is to create a predictive model that predicts forward returns.
+
+
+* Project overview ([slides](slides/11_GA_Stocks.pdf))
+	* 	Be sure to read documentation thoroughly and ask questions! We may not have included all of the information you need...
+
 
 
 ### Class 12: Clustering and Visualization
