@@ -222,13 +222,23 @@ Monday | Wednesday
 ### Class 11: Working a Data Problem
 * Today we will work on a real world data problem! Our [data](data/ZYX_prices.csv) is stock data over 7 months of a fictional company ZYX including twitter sentiment, volume and stock price. Our goal is to create a predictive model that predicts forward returns.
 
-
 * Project overview ([slides](slides/11_GA_Stocks.pdf))
 	* 	Be sure to read documentation thoroughly and ask questions! We may not have included all of the information you need...
 
 
-
 ### Class 12: Clustering and Visualization
+
+**Homework:**
+* Read Paul Graham's [A Plan for Spam](http://www.paulgraham.com/spam.html) and be prepared to discuss it in class on Monday. Here are some questions to think about while you read:
+    * Should a spam filter optimize for sensitivity or specificity, in Paul's opinion?
+    * Before he tried the "statistical approach" to spam filtering, what was his approach?
+    * What did Paul say were some of the benefits of the statistical approach?
+    * How good was his prediction of the "spam of the future"?
+* Below are the foundational topics upon which Monday's class will depend. Please review these materials before class:
+    * Confusion matrix: [Kevin's guide](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) roughly mirrors the lecture from class 10.
+    * Sensitivity and specificity: Rahul Patwari has an [excellent video](https://www.youtube.com/watch?v=U4_3fditnWg&list=PL41ckbAGB5S2PavLIXUETzAmi5reIod23) (9 minutes).
+    * Basics of probability: These [introductory slides](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) (from the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php)) are quite good and include integrated quizzes. Pay specific attention to these terms: probability, sample space, independence.
+* You should definitely be working on your project! Your rough draft is due in two weeks!
 
 
 ### Class 13: Naive Bayes
