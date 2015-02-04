@@ -227,6 +227,10 @@ Monday | Wednesday
 
 
 ### Class 12: Clustering and Visualization
+* The [slides](slides/12_clustering.pdf) today will focus on our first look at unsupervizes learning, K-Means Clustering!
+* 	The [code](code/) for today focuses on two main examples
+	*  We will investigate simple clustering using the iris data set
+	*  We will take a look at a harder example, using pandora songs as data. See [data](data/songs.csv).
 
 **Homework:**
 * Read Paul Graham's [A Plan for Spam](http://www.paulgraham.com/spam.html) and be prepared to **discuss it in class on Monday**. Here are some questions to think about while you read:
