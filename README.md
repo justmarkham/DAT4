@@ -223,14 +223,14 @@ Monday | Wednesday
 * Today we will work on a real world data problem! Our [data](data/ZYX_prices.csv) is stock data over 7 months of a fictional company ZYX including twitter sentiment, volume and stock price. Our goal is to create a predictive model that predicts forward returns.
 
 * Project overview ([slides](slides/11_GA_Stocks.pdf))
-	* 	Be sure to read documentation thoroughly and ask questions! We may not have included all of the information you need...
+    * Be sure to read documentation thoroughly and ask questions! We may not have included all of the information you need...
 
 
 ### Class 12: Clustering and Visualization
-* The [slides](slides/12_clustering.pdf) today will focus on our first look at unsupervizes learning, K-Means Clustering!
-* 	The [code](code/) for today focuses on two main examples
-	*  We will investigate simple clustering using the iris data set
-	*  We will take a look at a harder example, using pandora songs as data. See [data](data/songs.csv).
+* The [slides](slides/12_clustering.pdf) today will focus on our first look at unsupervised learning, K-Means Clustering!
+* The [code](code/) for today focuses on two main examples:
+    * We will investigate simple clustering using the iris data set.
+    * We will take a look at a harder example, using Pandora songs as data. See [data](data/songs.csv).
 
 **Homework:**
 * Read Paul Graham's [A Plan for Spam](http://www.paulgraham.com/spam.html) and be prepared to **discuss it in class on Monday**. Here are some questions to think about while you read:
@@ -243,6 +243,10 @@ Monday | Wednesday
     * **Sensitivity and specificity:** Rahul Patwari has an [excellent video](https://www.youtube.com/watch?v=U4_3fditnWg&list=PL41ckbAGB5S2PavLIXUETzAmi5reIod23) (9 minutes).
     * **Basics of probability:** These [introductory slides](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) (from the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php)) are quite good and include integrated quizzes. Pay specific attention to these terms: probability, sample space, independence.
 * You should definitely be working on your project! **Your rough draft is due in two weeks!**
+
+**Resources:**
+* [Introduction to Data Mining](http://www-users.cs.umn.edu/~kumar/dmbook/index.php) has a nice [chapter on cluster analysis](http://www-users.cs.umn.edu/~kumar/dmbook/ch8.pdf).
+* The scikit-learn user guide has a nice [section on clustering](http://scikit-learn.org/stable/modules/clustering.html).
 
 
 ### Class 13: Naive Bayes
