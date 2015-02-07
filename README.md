@@ -261,8 +261,8 @@ Monday | Wednesday
     * Example with spam
     * [Airport security example](http://www.quora.com/In-laymans-terms-how-does-Naive-Bayes-work/answer/Konstantin-Tt)
 * Naive Bayes classification in scikit-learn ([code](code/13_naive_bayes.py))
-    * [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
-    * [Naive Bayes](http://scikit-learn.org/stable/modules/naive_bayes.html)
+    * Data set: [SMS Spam Collection](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection)
+    * scikit-learn documentation: [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html), [Naive Bayes](http://scikit-learn.org/stable/modules/naive_bayes.html)
 
 **Resources:**
 * The first part of the slides was adapted from [Visualizing Bayes' theorem](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/), which includes an additional example (using Venn diagrams) of how this applies to testing for breast cancer.
