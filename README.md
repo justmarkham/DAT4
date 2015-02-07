@@ -236,12 +236,13 @@ Monday | Wednesday
 * Read Paul Graham's [A Plan for Spam](http://www.paulgraham.com/spam.html) and be prepared to **discuss it in class on Monday**. Here are some questions to think about while you read:
     * Should a spam filter optimize for sensitivity or specificity, in Paul's opinion?
     * Before he tried the "statistical approach" to spam filtering, what was his approach?
+    * How exactly does his statistical filtering system work?
     * What did Paul say were some of the benefits of the statistical approach?
     * How good was his prediction of the "spam of the future"?
 * Below are the foundational topics upon which Monday's class will depend. Please review these materials before class:
     * **Confusion matrix:** [Kevin's guide](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) roughly mirrors the lecture from class 10.
     * **Sensitivity and specificity:** Rahul Patwari has an [excellent video](https://www.youtube.com/watch?v=U4_3fditnWg&list=PL41ckbAGB5S2PavLIXUETzAmi5reIod23) (9 minutes).
-    * **Basics of probability:** These [introductory slides](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) (from the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php)) are quite good and include integrated quizzes. Pay specific attention to these terms: probability, sample space, independence.
+    * **Basics of probability:** These [introductory slides](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) (from the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php)) are quite good and include integrated quizzes. Pay specific attention to these terms: probability, sample space, mutually exclusive, independent.
 * You should definitely be working on your project! **Your rough draft is due in two weeks!**
 
 **Resources:**
@@ -250,6 +251,24 @@ Monday | Wednesday
 
 
 ### Class 13: Naive Bayes
+* Briefly discuss [A Plan for Spam](http://www.paulgraham.com/spam.html)
+* Probability and Bayes' Theorem
+    * [Slides](slides/13_naive_bayes.pdf) part 1
+    * [Visualization of conditional probability](http://setosa.io/conditional/)
+    * Example with iris data
+* Naive Bayes classification
+    * [Slides](slides/13_naive_bayes.pdf) part 2
+    * Example with spam
+    * [Airport security example](http://www.quora.com/In-laymans-terms-how-does-Naive-Bayes-work/answer/Konstantin-Tt)
+* Naive Bayes classification in scikit-learn ([code](code/13_naive_bayes.py))
+    * [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
+    * [Naive Bayes](http://scikit-learn.org/stable/modules/naive_bayes.html)
+
+**Resources:**
+* The first part of the slides was adapted from [Visualizing Bayes' theorem](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/), which includes an additional example (using Venn diagrams) of how this applies to testing for breast cancer.
+* For an alternative introduction to Bayes' Theorem, [Bayes' Rule for Ducks](https://planspacedotorg.wordpress.com/2014/02/23/bayes-rule-for-ducks/) and this [5-minute video on conditional probability](https://www.youtube.com/watch?v=Zxm4Xxvzohk) may be helpful.
+* For more details on Naive Bayes classification, Wikipedia has two useful articles ([Naive Bayes classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) and [Naive Bayes spam filtering](http://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering)), and Cross Validated has an excellent [Q&A](http://stats.stackexchange.com/questions/21822/understanding-naive-bayes).
+* If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004.
 
 
 ### Class 14: Natural Language Processing
