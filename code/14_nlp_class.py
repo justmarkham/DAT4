@@ -193,13 +193,26 @@ sample = ['Bob likes sports', 'Bob hates sports', 'Bob likes likes trees']
 
 from sklearn.feature_extraction.text import CountVectorizer
 vect = CountVectorizer()
-vect.fit_transform(sample).toarray()
+vect.fit_transform(sentences).toarray()
 vect.get_feature_names()
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 tfidf = TfidfVectorizer()
 tfidf.fit_transform(sample).toarray()
 tfidf.get_feature_names()
+
+'''
+LDA
+'''
+import lda
+
+vect = CountVectorizer(stop_words='english')
+model = lda.LDA(n_topics=5, n_iter=500)
+model.fit(vect.fit_transform(sentences).toarray())
+topic_word = model.topic_word_
+for i, topic_dist in enumerate(topic_word):
+    topic_words = np.array(vect.get_feature_names())[np.argsort(topic_dist)][:-n_top_words:-1]
+    print('Topic {}: {}'.format(i, ' '.join(topic_words)))
 
 
 '''
