@@ -92,7 +92,7 @@ sorted(c.items())[:25]  # some are strange
 '''
 Lemmatization
 What:  Derive the canonical form ('lemma') of a word
-Why:   Can be better than stemming
+Why:   Can be better than stemming, reduces words to a 'normal' form.
 Notes: Uses a dictionary-based approach (slower than stemming)
 '''
 
@@ -102,8 +102,8 @@ lemmatizer = nltk.WordNetLemmatizer()
 stemmer.stem('dogs')
 lemmatizer.lemmatize('dogs')
 
-stemmer.stem('wolves')
-lemmatizer.lemmatize('wolves')
+stemmer.stem('wolves') # Beter for information retrieval and search
+lemmatizer.lemmatize('wolves') # Better for text analysis
 
 stemmer.stem('is')
 lemmatizer.lemmatize('is')
@@ -147,7 +147,7 @@ clean_tokens_no_stop = [t for t in clean_tokens if t not in stopwords]
 c = Counter(clean_tokens_no_stop)
 most_common_not_stemmed = c.most_common(25)
 
-# compare the two lists
+# Compare the most common results for stemmed words and non stemmed words
 for i in range(25):
     text_list = most_common_stemmed[i][0] + '  ' + str(most_common_stemmed[i][1]) + ' '*25
     text_list = text_list[0:30]
@@ -202,7 +202,9 @@ tfidf.fit_transform(sample).toarray()
 tfidf.get_feature_names()
 
 '''
-LDA
+LDA - Latent Dirichlet Allocation
+What:  Way of automatically discovering topics from sentences
+Why:   Much quicker than manually creating and identifying topic clusters
 '''
 import lda
 
