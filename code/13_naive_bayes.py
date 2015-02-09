@@ -32,9 +32,9 @@ X_test.shape
 from sklearn.feature_extraction.text import CountVectorizer
 
 # start with a simple example
-train_simple = ['Bob Likes Sports',
-                'Bob hates sports',
-                'Bob really, really likes a beer']
+train_simple = ['call you tonight',
+                'Call me a cab',
+                'please call me... PLEASE!']
 
 # learn the 'vocabulary' of the training data
 vect = CountVectorizer()
@@ -50,7 +50,7 @@ train_simple_dtm.toarray()
 pd.DataFrame(train_simple_dtm.toarray(), columns=vect.get_feature_names())
 
 # transform testing data into a document-term matrix (using existing vocabulary)
-test_simple = ['Joe really hates beer']
+test_simple = ["please don't call me"]
 test_simple_dtm = vect.transform(test_simple)
 test_simple_dtm.toarray()
 pd.DataFrame(test_simple_dtm.toarray(), columns=vect.get_feature_names())
@@ -75,11 +75,36 @@ len(train_features)
 train_features[:50]
 train_features[-50:]
 
-# convert train_dtm to a regular array and examine it
+# convert train_dtm to a regular array
 train_arr = train_dtm.toarray()
 train_arr
+
+
+## SIMPLE SUMMARIES OF THE TRAINING DATA
+
+# refresher on numpy
+import numpy as np
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+arr[0, 0]
+arr[1, 3]
+arr[0, :]
+arr[:, 0]
+np.sum(arr)
+np.sum(arr, axis=0)
+np.sum(arr, axis=1)
+
+# calculate the number of tokens in the 0th message in train_arr
 sum(train_arr[0, :])
+
+# count how many times the 0th token appears across ALL messages in train_arr
 sum(train_arr[:, 0])
+
+# count how many times EACH token appears across ALL messages in train_arr
+np.sum(train_arr, axis=0)
+
+# create a DataFrame of tokens with their counts
+train_token_counts = pd.DataFrame({'token':train_features, 'count':np.sum(train_arr, axis=0)})
+train_token_counts.sort_index(by='count', ascending=False)
 
 
 ## MODEL BUILDING WITH NAIVE BAYES
@@ -121,53 +146,37 @@ cross_val_score(nb, all_dtm, df.label, cv=10, scoring='roc_auc').mean()
 cross_val_score(logreg, all_dtm, df.label, cv=10, scoring='roc_auc').mean()
 
 
-## SIMPLE SUMMARIES OF THE DATA
+## CALCULATE THE 'SPAMMINESS' OF EACH TOKEN
 
-# sum the rows and columns
-import numpy as np
-tokens_per_email = np.sum(train_arr, axis=1)    # sum of each row
-tokens_per_email
-count_per_token = np.sum(train_arr, axis=0)     # sum of each column
-count_per_token[:50]
+# create separate DataFrames for ham and spam
+df_ham = df[df.label==0]
+df_spam = df[df.label==1]
 
-# find the most frequent token
-np.max(count_per_token)
-np.argmax(count_per_token)
-train_features[np.argmax(count_per_token)]
+# learn the vocabulary of ALL messages and save it
+vect.fit(df.msg)
+all_features = vect.get_feature_names()
 
+# create document-term matrix of ham, then convert to a regular array
+ham_dtm = vect.transform(df_ham.msg)
+ham_arr = ham_dtm.toarray()
 
-## FIND THE 'HAMMIEST' AND 'SPAMMIEST' TOKENS
+# create document-term matrix of spam, then convert to a regular array
+spam_dtm = vect.transform(df_spam.msg)
+spam_arr = spam_dtm.toarray()
 
-# split train_arr into ham and spam sections
-ham_arr = train_arr[:200]
-spam_arr = train_arr[200:]
-ham_arr
-spam_arr
+# count how many times EACH token appears across ALL messages in ham_arr
+ham_counts = np.sum(ham_arr, axis=0)
 
-# calculate count of each token
-ham_count_per_token = np.sum(ham_arr, axis=0) + 1
-spam_count_per_token = np.sum(spam_arr, axis=0) + 1
+# count how many times EACH token appears across ALL messages in spam_arr
+spam_counts = np.sum(spam_arr, axis=0)
 
-# alternative method for accessing counts
-ham_count_per_token = nb.feature_count_[0] + 1
-spam_count_per_token = nb.feature_count_[1] + 1
+# create a DataFrame of tokens with their separate ham and spam counts
+all_token_counts = pd.DataFrame({'token':all_features, 'ham':ham_counts, 'spam':spam_counts})
 
-# calculate rate of each token
-ham_token_rate = ham_count_per_token/float(200)
-spam_token_rate = spam_count_per_token/float(200)
-ham_token_rate
-spam_token_rate
+# add one to ham counts and spam counts so that ratio calculations (below) make more sense
+all_token_counts['ham'] = all_token_counts.ham + 1
+all_token_counts['spam'] = all_token_counts.spam + 1
 
-# for each token, calculate ratio of ham-to-spam
-ham_to_spam_ratio = ham_token_rate/spam_token_rate
-np.max(ham_to_spam_ratio)
-ham_arr[:, np.argmax(ham_to_spam_ratio)]        # count of that token in ham emails
-spam_arr[:, np.argmax(ham_to_spam_ratio)]       # count of that token in spam emails
-train_features[np.argmax(ham_to_spam_ratio)]    # hammiest token
-
-# for each token, calculate ratio of spam-to-ham
-spam_to_ham_ratio = spam_token_rate/ham_token_rate
-np.max(spam_to_ham_ratio)
-spam_arr[:, np.argmax(spam_to_ham_ratio)]       # count of that token in spam emails
-ham_arr[:, np.argmax(spam_to_ham_ratio)]        # count of that token in ham emails
-train_features[np.argmax(spam_to_ham_ratio)]    # spammiest token
+# calculate ratio of spam-to-ham for each token
+all_token_counts['spam_ratio'] = all_token_counts.spam / all_token_counts.ham
+all_token_counts.sort_index(by='spam_ratio')
