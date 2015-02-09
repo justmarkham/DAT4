@@ -129,6 +129,12 @@ probs = nb.predict_proba(test_dtm)[:, 1]
 probs
 print metrics.roc_auc_score(y_test, probs)
 
+# show the message text for the false positives
+X_test[y_test < preds]
+
+# show the message text for the false negatives
+X_test[y_test > preds]
+
 
 ## COMPARE NAIVE BAYES AND LOGISTIC REGRESSION
 ## USING ALL DATA AND CROSS-VALIDATION
@@ -141,6 +147,7 @@ from sklearn.linear_model import LogisticRegression
 logreg = LogisticRegression()
 
 # compare AUC using cross-validation
+# note: this is slightly improper cross-validation... can you figure out why?
 from sklearn.cross_validation import cross_val_score
 cross_val_score(nb, all_dtm, df.label, cv=10, scoring='roc_auc').mean()
 cross_val_score(logreg, all_dtm, df.label, cv=10, scoring='roc_auc').mean()
