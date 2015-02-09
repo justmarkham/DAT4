@@ -270,9 +270,34 @@ Monday | Wednesday
 * For more details on Naive Bayes classification, Wikipedia has two useful articles ([Naive Bayes classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) and [Naive Bayes spam filtering](http://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering)), and Cross Validated has an excellent [Q&A](http://stats.stackexchange.com/questions/21822/understanding-naive-bayes).
 * If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004.
 
+**Homework:**
+
+* Download all of the NLTK collections.
+   * In Python, use the following commands to bring up the download menu.
+   * ```import nltk```
+   * ```nltk.download()```
+   * Choose "all".
+* Install two new packages:  ```textblob``` and ```lda```.
+   * Use ```pip install textblob``` and ```pip install lda```.
 
 ### Class 14: Natural Language Processing
+* Overview of Natural Language Process ([slides](https://github.com/justmarkham/DAT4/blob/master/slides/14_natural_language_processing.pptx))
+* Real World Examples
+* Natural Language Processing ([code](https://github.com/justmarkham/DAT4/blob/master/code/14_nlp_class.py))
+* NLTK: tokenization, stemming, lemmatization, part of speech tagging, stopwords, Named Entity Recognition (Stanford NER Tagger), TF-IDF, LDA, document summarization
+* Alternative: TextBlob
 
+**Resources:**
+
+* [Natural Language Processing with Python](http://www.nltk.org/book/): free online book to go in-depth with NLTK
+* [NLP online course](https://www.coursera.org/course/nlp): no sessions are available, but [video lectures](https://class.coursera.org/nlp/lecture) and [slides](http://web.stanford.edu/~jurafsky/NLPCourseraSlides.html) are still accessible
+* [Brief slides](http://files.meetup.com/7616132/DC-NLP-2013-09%20Charlie%20Greenbacker.pdf) on the major task areas of NLP
+* [Detailed slides](https://github.com/ga-students/DAT_SF_9/blob/master/16_Text_Mining/DAT9_lec16_Text_Mining.pdf) on a lot of NLP terminology
+* [A visual survey of text visualization techniques](http://textvis.lnu.se/): for exploration and inspiration
+* [DC Natural Language Processing](http://www.meetup.com/DC-NLP/): active Meetup group
+* [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml): suite of tools if you want to get serious about NLP
+* Getting started with regex: [Python introductory lesson](https://developers.google.com/edu/python/regular-expressions) and [reference guide](code/99_regex_reference.py), [real-time regex tester](http://www.regexr.com/), [in-depth tutorials](http://www.rexegg.com/)
+* [SpaCy](http://honnibal.github.io/spaCy/): a new NLP package
 
 ### Class 15: Decision Trees and Ensembles
 
