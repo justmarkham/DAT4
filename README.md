@@ -252,13 +252,13 @@ Monday | Wednesday
 
 ### Class 13: Naive Bayes
 * Briefly discuss [A Plan for Spam](http://www.paulgraham.com/spam.html)
-* Probability and Bayes' Theorem
+* Probability and Bayes' theorem
     * [Slides](slides/13_naive_bayes.pdf) part 1
     * [Visualization of conditional probability](http://setosa.io/conditional/)
-    * Example with iris data
+    * Applying Bayes' theorem to iris classification ([code](code/13_bayes_iris.py))
 * Naive Bayes classification
     * [Slides](slides/13_naive_bayes.pdf) part 2
-    * Example with spam
+    * Example with spam email
     * [Airport security example](http://www.quora.com/In-laymans-terms-how-does-Naive-Bayes-work/answer/Konstantin-Tt)
 * Naive Bayes classification in scikit-learn ([code](code/13_naive_bayes.py))
     * Data set: [SMS Spam Collection](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection)
