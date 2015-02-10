@@ -209,14 +209,18 @@ Why:   Much quicker than manually creating and identifying topic clusters
 '''
 import lda
 
-vect = CountVectorizer(stop_words='english', ngram_range=[1,3])
+# Instantiate a count vectorizer with two additional parameters
+vect = CountVectorizer(stop_words='english', ngram_range=[1,3]) 
+sentences_train = vect.fit_transform(sentences)
+
+# Instantiate an LDA model
 model = lda.LDA(n_topics=10, n_iter=500)
-model.fit(vect.fit_transform(sentences).toarray())
+model.fit(sentences_train.toarray()) # Fit the model 
 n_top_words = 10
 topic_word = model.topic_word_
 for i, topic_dist in enumerate(topic_word):
     topic_words = np.array(vect.get_feature_names())[np.argsort(topic_dist)][:-n_top_words:-1]
-    print('Topic {}: {}'.format(i, ' '.join(topic_words)))
+    print('Topic {}: {}'.format(i, ', '.join(topic_words)))
 
 
 '''
