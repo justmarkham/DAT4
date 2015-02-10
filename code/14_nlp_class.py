@@ -317,3 +317,24 @@ blob = TextBlob('Welcome to the classroom.')
 blob.translate(to='es')
 blob = TextBlob('Hola amigos')
 blob.detect_language()
+
+'''
+Data Science Toolkit Sentiment
+Provides many different APIs for converting and getting information
+We'll use the text2sentiment API.
+'''
+# Import the necessary modules
+import requests
+import json
+
+# Sample sentences
+sentences = ['I love Sinan!', 'I hate Sinan!', 'I feel nothing about Sinan!']
+# API endpoint (i.e.the URL they ask you to send your text to)
+url = 'http://www.datasciencetoolkit.org/text2sentiment/'
+
+# Loop through the sentences
+for sentence in sentences:
+    payload = {'text': sentence} # The sentence we want the sentiment of 
+    headers = {'content-type': 'application/json'} # The type of data you are sending
+    r = requests.post(url, data=json.dumps(payload), headers=headers) # Send the data
+    print sentence, json.loads(r.text)['score'] # Print the results
