@@ -215,7 +215,7 @@ sentences_train = vect.fit_transform(sentences)
 
 # Instantiate an LDA model
 model = lda.LDA(n_topics=10, n_iter=500)
-model.fit(sentences_train.toarray()) # Fit the model 
+model.fit(sentences_train) # Fit the model 
 n_top_words = 10
 topic_word = model.topic_word_
 for i, topic_dist in enumerate(topic_word):
