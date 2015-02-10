@@ -31,6 +31,7 @@ Notes: Relatively easy with English language text, not easy with some languages
 # "corpora" = plural form of corpus
 
 import requests
+from bs4 import BeautifulSoup
 r = requests.get("http://en.wikipedia.org/wiki/Data_science")
 b = BeautifulSoup(r.text)
 paragraphs = b.find("body").findAll("p")
@@ -208,9 +209,10 @@ Why:   Much quicker than manually creating and identifying topic clusters
 '''
 import lda
 
-vect = CountVectorizer(stop_words='english')
-model = lda.LDA(n_topics=5, n_iter=500)
+vect = CountVectorizer(stop_words='english', ngram_range=[1,3])
+model = lda.LDA(n_topics=10, n_iter=500)
 model.fit(vect.fit_transform(sentences).toarray())
+n_top_words = 10
 topic_word = model.topic_word_
 for i, topic_dist in enumerate(topic_word):
     topic_words = np.array(vect.get_feature_names())[np.argsort(topic_dist)][:-n_top_words:-1]
