@@ -276,6 +276,7 @@ Monday | Wednesday
    * ```import nltk```
    * ```nltk.download()```
    * Choose "all".
+   * Alternatively, just type ```nltk.download('all')```
 * Install two new packages:  ```textblob``` and ```lda```.
    * Use ```pip install textblob``` and ```pip install lda```.
 
