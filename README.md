@@ -278,7 +278,8 @@ Monday | Wednesday
    * Choose "all".
    * Alternatively, just type ```nltk.download('all')```
 * Install two new packages:  ```textblob``` and ```lda```.
-   * Use ```pip install textblob``` and ```pip install lda```.
+   * Open a terminal or command prompt.
+   * Type ```pip install textblob``` and ```pip install lda```.
 
 
 ### Class 14: Natural Language Processing
