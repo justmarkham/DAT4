@@ -77,7 +77,7 @@ If you can't find the necessary data and decide that you need to alter your proj
 
 ### February 18: First Draft Due
 
-Upload a rough copy of your work to your own project repository on GitHub. Your peers and instructors will provide feedback, according to [these guidelines](peer_review.md).
+Zip up all files relevant to your project, and email them to Sinan. Your peers and instructors will provide feedback, according to [these guidelines](peer_review.md).
 
 At a minimum, you should include:
 * Narrative of what you have done so far and what you are still planning to do, ideally in a format similar to the format of your final project paper
