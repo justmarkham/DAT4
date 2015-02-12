@@ -16,7 +16,7 @@ Why NLTK?
 '''
 
 import nltk
-nltk.download()
+nltk.download('all')
 
 
 '''
@@ -194,7 +194,7 @@ sample = ['Bob likes sports', 'Bob hates sports', 'Bob likes likes trees']
 
 from sklearn.feature_extraction.text import CountVectorizer
 vect = CountVectorizer()
-vect.fit_transform(sentences).toarray()
+vect.fit_transform(sample).toarray()
 vect.get_feature_names()
 
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -208,6 +208,7 @@ What:  Way of automatically discovering topics from sentences
 Why:   Much quicker than manually creating and identifying topic clusters
 '''
 import lda
+import numpy as np
 
 # Instantiate a count vectorizer with two additional parameters
 vect = CountVectorizer(stop_words='english', ngram_range=[1,3]) 
@@ -235,8 +236,6 @@ reviews = [movie_reviews.raw(filename) for filename in movie_reviews.fileids()]
 tfidf = TfidfVectorizer(stop_words='english')
 dtm = tfidf.fit_transform(reviews)
 features = tfidf.get_feature_names()
-
-import numpy as np
 
 # find the most and least "interesting" sentences in a randomly selected review
 def summarize():
