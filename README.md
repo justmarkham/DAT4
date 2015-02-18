@@ -304,17 +304,20 @@ Monday | Wednesday
 ### Class 15: Decision Trees and Ensembles
 * Decision Trees and Ensembles ([IPython notebook](http://nbviewer.ipython.org/github/justmarkham/DAT4/blob/master/notebooks/15_trees_forests.ipynb))
 
+**Homework:**
+* By next Wednesday (before class), review the project drafts of your two assigned peers according to [these guidelines](peer_review.md). You should upload your feedback as a Markdown (or plain text) document to the "reviews" folder of DAT4-students. If your last name is Smith and you are reviewing Jones, you should name your file `smith_reviews_jones.md`.
+
+**Resources:**
+* scikit-learn documentation: [Decision Trees](http://scikit-learn.org/stable/modules/tree.html)
+* scikit-learn documentation: [Ensemble Methods](http://scikit-learn.org/stable/modules/ensemble.html)
+* Quora: [How do random forests work in layman's terms?](http://www.quora.com/How-do-random-forests-work-in-laymans-terms/answer/Edwin-Chen-1)
+
 **Installing Graphviz (optional):**
 * Mac:
     * [Download and install PKG file](http://www.graphviz.org/Download_macos.php)
 * Windows:
     * [Download and install MSI file](http://www.graphviz.org/Download_windows.php)
     * Add it to your Path: Go to Control Panel, System, Advanced System Settings, Environment Variables. Under system variables, edit "Path" to include the path to the "bin" folder, such as: `C:\Program Files (x86)\Graphviz2.38\bin`
-
-**Resources:**
-* scikit-learn documentation: [Decision Trees](http://scikit-learn.org/stable/modules/tree.html)
-* scikit-learn documentation: [Ensemble Methods](http://scikit-learn.org/stable/modules/ensemble.html)
-* Quora: [How do random forests work in layman's terms?](http://www.quora.com/How-do-random-forests-work-in-laymans-terms/answer/Edwin-Chen-1)
 
 
 ### Class 16: Advanced scikit-learn
