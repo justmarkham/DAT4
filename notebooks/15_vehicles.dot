@@ -1,0 +1,27 @@
+digraph Tree {
+0 [label="year <= 2006.5000\nmse = 35247755.102\nsamples = 14", shape="box"] ;
+1 [label="miles <= 131000.0000\nmse = 1232839.50617\nsamples = 9", shape="box"] ;
+0 -> 1 ;
+2 [label="miles <= 93000.0000\nmse = 250000.0\nsamples = 2", shape="box"] ;
+1 -> 2 ;
+3 [label="mse = 0.0000\nsamples = 1\nvalue = [ 5000.]", shape="box"] ;
+2 -> 3 ;
+4 [label="mse = 0.0000\nsamples = 1\nvalue = [ 4000.]", shape="box"] ;
+2 -> 4 ;
+5 [label="year <= 2001.0000\nmse = 352653.061224\nsamples = 7", shape="box"] ;
+1 -> 5 ;
+6 [label="mse = 62500.0000\nsamples = 2\nvalue = [ 1550.]", shape="box"] ;
+5 -> 6 ;
+7 [label="mse = 221600.0000\nsamples = 5\nvalue = [ 2480.]", shape="box"] ;
+5 -> 7 ;
+8 [label="miles <= 21500.0000\nmse = 21800000.0\nsamples = 5", shape="box"] ;
+0 -> 8 ;
+9 [label="mse = 0.0000\nsamples = 1\nvalue = [ 22000.]", shape="box"] ;
+8 -> 9 ;
+10 [label="year <= 2009.5000\nmse = 4671875.0\nsamples = 4", shape="box"] ;
+8 -> 10 ;
+11 [label="mse = 62500.0000\nsamples = 2\nvalue = [ 9250.]", shape="box"] ;
+10 -> 11 ;
+12 [label="mse = 250000.0000\nsamples = 2\nvalue = [ 13500.]", shape="box"] ;
+10 -> 12 ;
+}

@@ -1,0 +1,31 @@
+digraph Tree {
+0 [label="sex <= 0.5000\ngini = 0.473012957861\nsamples = 891", shape="box"] ;
+1 [label="pclass <= 2.5000\ngini = 0.382835003448\nsamples = 314", shape="box"] ;
+0 -> 1 ;
+2 [label="age <= 2.5000\ngini = 0.100276816609\nsamples = 170", shape="box"] ;
+1 -> 2 ;
+3 [label="gini = 0.5000\nsamples = 2\nvalue = [ 1.  1.]", shape="box"] ;
+2 -> 3 ;
+4 [label="gini = 0.0907\nsamples = 168\nvalue = [   8.  160.]", shape="box"] ;
+2 -> 4 ;
+5 [label="embarked_S <= 0.5000\ngini = 0.5\nsamples = 144", shape="box"] ;
+1 -> 5 ;
+6 [label="gini = 0.4228\nsamples = 56\nvalue = [ 17.  39.]", shape="box"] ;
+5 -> 6 ;
+7 [label="gini = 0.4688\nsamples = 88\nvalue = [ 55.  33.]", shape="box"] ;
+5 -> 7 ;
+8 [label="age <= 6.5000\ngini = 0.306443716228\nsamples = 577", shape="box"] ;
+0 -> 8 ;
+9 [label="pclass <= 2.5000\ngini = 0.444444444444\nsamples = 24", shape="box"] ;
+8 -> 9 ;
+10 [label="gini = 0.0000\nsamples = 10\nvalue = [  0.  10.]", shape="box"] ;
+9 -> 10 ;
+11 [label="gini = 0.4898\nsamples = 14\nvalue = [ 8.  6.]", shape="box"] ;
+9 -> 11 ;
+12 [label="pclass <= 1.5000\ngini = 0.279782478606\nsamples = 553", shape="box"] ;
+8 -> 12 ;
+13 [label="gini = 0.4599\nsamples = 120\nvalue = [ 77.  43.]", shape="box"] ;
+12 -> 13 ;
+14 [label="gini = 0.2043\nsamples = 433\nvalue = [ 383.   50.]", shape="box"] ;
+12 -> 14 ;
+}
