@@ -19,8 +19,8 @@ Monday | Wednesday
 1/26: [Logistic Regression,<br>Preview of Other Models](#class-9-logistic-regression-preview-of-other-models) | 1/28: [Model Evaluation Metrics](#class-10-model-evaluation-metrics)<br>**Milestone:** Data Exploration and Analysis Plan
 2/2: [Working a Data Problem](#class-11-working-a-data-problem) | 2/4: [Clustering and Visualization](#class-12-clustering-and-visualization)<br>**Milestone:** Deadline for Topic Changes
 2/9: [Naive Bayes](#class-13-naive-bayes) | 2/11: [Natural Language Processing](#class-14-natural-language-processing)
-2/16: *No Class* | 2/18: [Decision Trees and Ensembles](#class-15-decision-trees-and-ensembles)<br>**Milestone:** First Draft
-2/23: [Advanced scikit-learn](#class-16-advanced-scikit-learn) | 2/25: [Databases and MapReduce](#class-17-databases-and-mapreduce)
+2/16: *No Class* | 2/18: [Decision Trees](#class-15-decision-trees)<br>**Milestone:** First Draft
+2/23: [Ensembling](#class-16-ensembling) | 2/25: [Databases and MapReduce](#class-17-databases-and-mapreduce)
 3/2: [Recommenders](#class-18-recommenders) | 3/4: [Course Review, Companion Tools](#class-19-course-review-companion-tools)<br>**Milestone:** Second Draft (Optional)
 3/9: [TBD](#class-20-tbd) | 3/11: [Project Presentations](#class-21-project-presentations)
 3/16: [Project Presentations](#class-22-project-presentations) |
@@ -301,16 +301,14 @@ Monday | Wednesday
 * [SpaCy](http://honnibal.github.io/spaCy/): a new NLP package
 
 
-### Class 15: Decision Trees and Ensembles
-* Decision Trees and Ensembles ([IPython notebook](http://nbviewer.ipython.org/github/justmarkham/DAT4/blob/master/notebooks/15_trees_forests.ipynb))
+### Class 15: Decision Trees
+* Decision trees ([IPython notebook](http://nbviewer.ipython.org/github/justmarkham/DAT4/blob/master/notebooks/15_decision_trees.ipynb))
 
 **Homework:**
 * By next Wednesday (before class), review the project drafts of your two assigned peers according to [these guidelines](peer_review.md). You should upload your feedback as a Markdown (or plain text) document to the "reviews" folder of DAT4-students. If your last name is Smith and you are reviewing Jones, you should name your file `smith_reviews_jones.md`.
 
 **Resources:**
 * scikit-learn documentation: [Decision Trees](http://scikit-learn.org/stable/modules/tree.html)
-* scikit-learn documentation: [Ensemble Methods](http://scikit-learn.org/stable/modules/ensemble.html)
-* Quora: [How do random forests work in layman's terms?](http://www.quora.com/How-do-random-forests-work-in-laymans-terms/answer/Edwin-Chen-1)
 
 **Installing Graphviz (optional):**
 * Mac:
@@ -320,7 +318,12 @@ Monday | Wednesday
     * Add it to your Path: Go to Control Panel, System, Advanced System Settings, Environment Variables. Under system variables, edit "Path" to include the path to the "bin" folder, such as: `C:\Program Files (x86)\Graphviz2.38\bin`
 
 
-### Class 16: Advanced scikit-learn
+### Class 16: Ensembling
+* Ensembling ([IPython notebook](http://nbviewer.ipython.org/github/justmarkham/DAT4/blob/master/notebooks/16_ensembling.ipynb))
+
+**Resources:**
+* scikit-learn documentation: [Ensemble Methods](http://scikit-learn.org/stable/modules/ensemble.html)
+* Quora: [How do random forests work in layman's terms?](http://www.quora.com/How-do-random-forests-work-in-laymans-terms/answer/Edwin-Chen-1)
 
 
 ### Class 17: Databases and MapReduce
