@@ -21,8 +21,8 @@ Monday | Wednesday
 2/9: [Naive Bayes](#class-13-naive-bayes) | 2/11: [Natural Language Processing](#class-14-natural-language-processing)
 2/16: *No Class* | 2/18: [Decision Trees](#class-15-decision-trees)<br>**Milestone:** First Draft
 2/23: [Ensembling](#class-16-ensembling) | 2/25: [Databases and MapReduce](#class-17-databases-and-mapreduce)
-3/2: [Recommenders](#class-18-recommenders) | 3/4: [Course Review, Companion Tools](#class-19-course-review-companion-tools)<br>**Milestone:** Second Draft (Optional)
-3/9: [TBD](#class-20-tbd) | 3/11: [Project Presentations](#class-21-project-presentations)
+3/2: [Recommenders](#class-18-recommenders) | 3/4: [Advanced scikit-learn](#class-19-advanced-scikit-learn)<br>**Milestone:** Second Draft (Optional)
+3/9: [Course Review, Companion Tools](#class-20-course-review-companion-tools) | 3/11: [Project Presentations](#class-21-project-presentations)
 3/16: [Project Presentations](#class-22-project-presentations) |
 
 
@@ -332,10 +332,10 @@ Monday | Wednesday
 ### Class 18: Recommenders
 
 
-### Class 19: Course Review, Companion Tools
+### Class 19: Advanced scikit-learn
 
 
-### Class 20: TBD
+### Class 20: Course Review, Companion Tools
 
 
 ### Class 21: Project Presentations
