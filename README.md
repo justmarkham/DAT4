@@ -341,7 +341,17 @@ Monday | Wednesday
 
 
 ### Class 18: Recommenders
+* Recommendation Engines [slides](slides/18_recommendation_engines.pdf)
+* Recommendation Engine Example [code](code/18_recommenders_class.py)
 
+
+**Resources:**
+
+* [The Netflix Prize](http://www.netflixprize.com/)
+
+* [Why Netflix never implemented the winning solution](https://www.techdirt.com/blog/innovation/articles/20120409/03412518422/why-netflix-never-implemented-algorithm-that-won-netflix-1-million-challenge.shtml)
+
+* [Visualization of the Music Genome Project] (http://www.music-map.com/)
 
 ### Class 19: Advanced scikit-learn
 
