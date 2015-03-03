@@ -344,16 +344,25 @@ Monday | Wednesday
 * Recommendation Engines [slides](slides/18_recommendation_engines.pdf)
 * Recommendation Engine Example [code](code/18_recommenders_class.py)
 
-
 **Resources:**
-
 * [The Netflix Prize](http://www.netflixprize.com/)
-
 * [Why Netflix never implemented the winning solution](https://www.techdirt.com/blog/innovation/articles/20120409/03412518422/why-netflix-never-implemented-algorithm-that-won-netflix-1-million-challenge.shtml)
+* [Visualization of the Music Genome Project](http://www.music-map.com/)
 
-* [Visualization of the Music Genome Project] (http://www.music-map.com/)
 
 ### Class 19: Advanced scikit-learn
+* Advanced scikit-learn ([code](code/19_advanced_sklearn.py))
+    * Searching for optimal parameters: [GridSearchCV](http://scikit-learn.org/stable/modules/grid_search.html)
+    * Standardization of features: [StandardScaler](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+    * Chaining steps: [Pipeline](http://scikit-learn.org/stable/modules/pipeline.html)
+    * Regularized regression ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT4/blob/master/notebooks/19_regularization.ipynb)): [Ridge, RidgeCV, Lasso, LassoCV](http://scikit-learn.org/stable/modules/linear_model.html)
+    * Regularized classification: [LogisticRegression](http://scikit-learn.org/stable/modules/linear_model.html)
+    * Feature selection: [RFE, RFECV](http://scikit-learn.org/stable/modules/feature_selection.html)
+
+**Resources:**
+* Here is a longer example of [feature scaling](http://nbviewer.ipython.org/github/rasbt/pattern_classification/blob/master/preprocessing/about_standardization_normalization.ipynb) in scikit-learn, with additional discussion of the types of scaling you can use.
+* [Clever Methods of Overfitting](http://hunch.net/?p=22) is a classic post by John Langford.
+* [Common Pitfalls in Machine Learning](http://danielnee.com/?p=155) is similar to Langford's post, but broader and a bit more readable.
 
 
 ### Class 20: Course Review, Companion Tools
