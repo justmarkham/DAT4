@@ -348,6 +348,7 @@ Monday | Wednesday
 * [The Netflix Prize](http://www.netflixprize.com/)
 * [Why Netflix never implemented the winning solution](https://www.techdirt.com/blog/innovation/articles/20120409/03412518422/why-netflix-never-implemented-algorithm-that-won-netflix-1-million-challenge.shtml)
 * [Visualization of the Music Genome Project](http://www.music-map.com/)
+* [The People Inside Your Machine](http://www.npr.org/blogs/money/2015/01/30/382657657/episode-600-the-people-inside-your-machine) (23 minutes) is a Planet Money podcast episode about how Amazon Mechanical Turks can assist with recommendation engines (and machine learning in general).
 
 
 ### Class 19: Advanced scikit-learn
