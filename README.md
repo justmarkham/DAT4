@@ -359,6 +359,9 @@ Monday | Wednesday
     * Regularized classification: [LogisticRegression](http://scikit-learn.org/stable/modules/linear_model.html)
     * Feature selection: [RFE, RFECV](http://scikit-learn.org/stable/modules/feature_selection.html)
 
+**Homework:**
+* Read this classic paper, which may help you to connect many of the topics we have studied throughout the course: [A Few Useful Things to Know about Machine Learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf).
+
 **Resources:**
 * Here is a longer example of [feature scaling](http://nbviewer.ipython.org/github/rasbt/pattern_classification/blob/master/preprocessing/about_standardization_normalization.ipynb) in scikit-learn, with additional discussion of the types of scaling you can use.
 * [Clever Methods of Overfitting](http://hunch.net/?p=22) is a classic post by John Langford.
