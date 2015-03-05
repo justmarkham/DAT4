@@ -31,7 +31,7 @@ cross_val_score(treeclf, X, y, cv=10, scoring='roc_auc').mean()
 
 # use GridSearchCV to automate the search
 from sklearn.grid_search import GridSearchCV
-treeclf = DecisionTreeClassifier()
+treeclf = DecisionTreeClassifier(random_state=1)
 max_depth_range = range(1, 21)
 param_grid = dict(max_depth=max_depth_range)
 grid = GridSearchCV(treeclf, param_grid, cv=10, scoring='roc_auc')
@@ -153,7 +153,7 @@ y = wine.label
 knn = KNeighborsClassifier(n_neighbors=3)
 cross_val_score(knn, X, y, cv=5, scoring='accuracy').mean()
 
-# why is this improper cross-validation on the scaled date?
+# why is this improper cross-validation on the scaled data?
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 cross_val_score(knn, X_scaled, y, cv=5, scoring='accuracy').mean()
@@ -261,7 +261,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
 # logistic regression
 from sklearn.linear_model import LogisticRegression
 logreg = LogisticRegression()
-logreg
 logreg.fit(X_train, y_train)
 logreg.coef_
 
