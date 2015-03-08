@@ -22,7 +22,7 @@ Monday | Wednesday
 2/16: *No Class* | 2/18: [Decision Trees](#class-15-decision-trees)<br>**Milestone:** First Draft
 2/23: [Ensembling](#class-16-ensembling) | 2/25: [Databases and MapReduce](#class-17-databases-and-mapreduce)
 3/2: [Recommenders](#class-18-recommenders) | 3/4: [Advanced scikit-learn](#class-19-advanced-scikit-learn)<br>**Milestone:** Second Draft (Optional)
-3/9: [Course Review, Companion Tools](#class-20-course-review-companion-tools) | 3/11: [Project Presentations](#class-21-project-presentations)
+3/9: [Course Review](#class-20-course-review) | 3/11: [Project Presentations](#class-21-project-presentations)
 3/16: [Project Presentations](#class-22-project-presentations) |
 
 
@@ -369,7 +369,18 @@ Monday | Wednesday
 * [Common Pitfalls in Machine Learning](http://danielnee.com/?p=155) is similar to Langford's post, but broader and a bit more readable.
 
 
-### Class 20: Course Review, Companion Tools
+### Class 20: Course Review
+* Data science review
+* Comparing supervised learning algorithms
+
+**Resources:**
+* [Choosing a Machine Learning Classifier](http://blog.echen.me/2011/04/27/choosing-a-machine-learning-classifier/): Edwin Chen's short and highly readable guide.
+* [scikit-learn "machine learning map"](http://scikit-learn.org/stable/tutorial/machine_learning_map/): Their guide for choosing the "right" estimator for your task.
+* [Machine Learning Done Wrong](http://ml.posthaven.com/machine-learning-done-wrong): Thoughtful advice on common mistakes to avoid in machine learning.
+* [Practical machine learning tricks from the KDD 2011 best industry paper](http://blog.david-andrzejewski.com/machine-learning/practical-machine-learning-tricks-from-the-kdd-2011-best-industry-paper/): More advanced advice than the resources above.
+* [An Empirical Comparison of Supervised Learning Algorithms](http://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf): Research paper from 2006.
+* [Getting in Shape for the Sport of Data Science](https://www.youtube.com/watch?v=kwt6XEh7U3g): 75-minute video of practical tips for machine learning (by the past president of Kaggle).
+* [Resources for continued learning!](resources.md)
 
 
 ### Class 21: Project Presentations
