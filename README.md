@@ -370,8 +370,8 @@ Monday | Wednesday
 
 
 ### Class 20: Course Review
-* Data science review
-* Comparing supervised learning algorithms
+* [Data science review](https://docs.google.com/document/d/1XCdyrsQwU5OC5os7RHdVTEtS-tpHBbsoKKWLpYI6Svo/edit?usp=sharing)
+* [Comparing supervised learning algorithms](https://docs.google.com/spreadsheets/d/15_QJXm6urctsbIXO-C_eXrsSffbHedio8z0E5ozxO-M/edit?usp=sharing)
 
 **Resources:**
 * [Choosing a Machine Learning Classifier](http://blog.echen.me/2011/04/27/choosing-a-machine-learning-classifier/): Edwin Chen's short and highly readable guide.
