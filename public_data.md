@@ -30,7 +30,7 @@
      * [20 Free Big Data Sources](http://smartdatacollective.com/bernardmarr/235366/big-data-20-free-big-data-sources-everyone-should-know)
 * APIs:
      * [Apigee](https://apigee.com/providers): explore dozens of popular APIs
-     * [Python API](http://www.pythonapi.com/): Python wrappers for many APIs
+     * [Python APIs](http://www.pythonforbeginners.com/api/list-of-python-apis): Python wrappers for many APIs
 * Other interesting datasets:
      * [FiveThirtyEight](https://github.com/fivethirtyeight/data): data and code related to their articles
      * [Donors Choose](http://data.donorschoose.org/open-data/overview/): data related to their projects
