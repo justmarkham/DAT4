@@ -21,6 +21,7 @@
 * [DataTau](http://www.datatau.com/): Like [Hacker News](https://news.ycombinator.com/), but for data
 * [MachineLearning on reddit](http://www.reddit.com/r/MachineLearning/): Very active subreddit
 * [Quora's Machine Learning section](http://www.quora.com/Machine-Learning): Lots of interesting Q&A
+* [Quora's Data Science topic FAQ](https://www.quora.com/What-is-the-Data-Science-topic-FAQ)
 * [KDnuggets](http://www.kdnuggets.com/): Data mining news, jobs, classes and more
 
 
@@ -57,16 +58,18 @@
 ## Face-to-Face Educational Programs
 
 * [Comparison of data science bootcamps](http://yet-another-data-blog.blogspot.com/2014/04/data-science-bootcamp-landscape-full.html): Up-to-date list maintained by a Zipfian Academy graduate
+* [The Complete List of Data Science Bootcamps & Fellowships](http://www.skilledup.com/articles/list-data-science-bootcamps/)
 * [Zipfian Academy](http://www.zipfianacademy.com/): Offers Data Science Immersive, Data Engineering Immersive, Master's in Big Data (San Francisco, but possibly expanding)
 * [Data Science Retreat](http://datascienceretreat.com/): Primarily uses R (Berlin)
 * [Metis Data Science Bootcamp](http://www.thisismetis.com/data-science): Newer bootcamp (New York)
 * [Persontyle](http://www.persontyle.com/): Various course offerings (based in London)
 * [Software Carpentry](http://software-carpentry.org/): Two-day workshops, primarily for researchers and hosted by universities (worldwide)
+* [Colleges and Universities with Data Science Degrees](http://datascience.community/colleges)
 
 
 ## Conferences
 
-* [Knowledge Discovery and Data Mining (KDD)](http://www.kdd.org/): Hosted by ACM (New York)
+* [Knowledge Discovery and Data Mining (KDD)](http://www.kdd.org/): Hosted by ACM
 * [O'Reilly Strata + Hadoop World](http://strataconf.com/): Big focus on "big data" (San Jose, London, New York)
 * [PyData](http://pydata.org/): For developers and users of Python data tools (worldwide)
 * [PyCon](https://us.pycon.org/): For developers and users of Python (Montreal in April 2015)
@@ -93,3 +96,4 @@
 * [Python Reference](https://github.com/rasbt/python_reference): Python tips, tutorials, and more
 * [videolectures.net](http://videolectures.net/Top/Computer_Science/): Tons of academic videos
 * [Metacademy](http://www.metacademy.org/list): Quick summary of many machine learning terms, with links to resources for learning more
+* [Terms in data science defined in one paragraph](https://github.com/rasbt/pattern_classification/blob/master/resources/data_glossary.md)
