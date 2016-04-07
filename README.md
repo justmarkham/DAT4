@@ -1,6 +1,6 @@
 ## DAT4 Course Repository
 
-Course materials for [General Assembly's Data Science course](https://generalassemb.ly/education/data-science/washington-dc/) in Washington, DC (12/15/14 - 3/16/15). View student work in the [student repository](https://github.com/justmarkham/DAT4-students).
+Course materials for [General Assembly's Data Science course](https://generalassemb.ly/education/data-science/washington-dc/) in Washington, DC (12/15/14 - 3/16/15).
 
 **Instructors:** Sinan Ozdemir and Kevin Markham ([Data School blog](http://www.dataschool.io/), [email newsletter](http://www.dataschool.io/subscribe/), [YouTube channel](https://www.youtube.com/user/dataschool))
 
