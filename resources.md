@@ -23,6 +23,7 @@
 * [Quora's Machine Learning section](http://www.quora.com/Machine-Learning): Lots of interesting Q&A
 * [Quora's Data Science topic FAQ](https://www.quora.com/What-is-the-Data-Science-topic-FAQ)
 * [KDnuggets](http://www.kdnuggets.com/): Data mining news, jobs, classes and more
+* [Community Curated Data Science Resources](https://hackr.io/tutorials/learn-data-science): blogs, videos, books etc
 
 
 ## DC Data Groups
