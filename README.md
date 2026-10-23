@@ -103,7 +103,7 @@ Monday | Wednesday
 
 **Resources:**
 * Read the first two chapters of [Pro Git](http://git-scm.com/book/en/v2) to gain a much deeper understanding of version control and basic Git commands.
-* [GitRef](http://gitref.org/) is an excellent reference guide for Git commands.
+* [Git commands explained](https://coddy.tech/git-commands) is an excellent reference guide for Git commands.
 * [Git quick reference for beginners](http://www.dataschool.io/git-quick-reference-for-beginners/) is a shorter reference guide with commands grouped by workflow.
 * The [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) covers standard Markdown and a bit of "[GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)."
 
